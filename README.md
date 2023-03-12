@@ -5,13 +5,12 @@ Slicing design desktop and mobile - [FIGMA](https://www.figma.com/file/1VE4sw0vO
 ## Requirement
 
 - Slicing halaman untuk tampilan desktop + mobile / section.
-- Pure html, css dan js, + gunakan css library via CDN (Bootstrap atau tailwind css).
+- Pure html, css dan js, + gunakan css library via CDN (Bootstrap atau tailwind css), disarankan menggunakan UI library untuk komponen yang cukup rumit (Carousel, dan sejenisnya).
 
 ## Step
 
 1. Clone [repository](https://github.com/private-ngoding-club/slicing-responsiveness)
-2. Setelah itu, ngoding MENGGUNAKAN branch yang sudah disediakan sesuai nama masing masing.
-3. Buat pull request hari sabtu tepat sebelum deadline ketat.
+2. Assign issue yang tersedia
 
 ## Aturan ketika ngoding
 
@@ -23,11 +22,14 @@ Slicing design desktop and mobile - [FIGMA](https://www.figma.com/file/1VE4sw0vO
 
 ## Aturan
 
+- Branch : [Nomor Issue] | Nama | Judul PR
+  Contoh : 1-ikrom-slicing-hero
 - PR : [Nomor Issue] | Nama | Judul PR
   Contoh : #1 | Ikrom | add slicing
 
 Notes:
 
 - [Tailwind](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/components/)
 - [Getbootstrap](https://getbootstrap.com/)
 - [Fontawesome](https://fontawesome.com/search?o=r&s=solid%2Cregular)
