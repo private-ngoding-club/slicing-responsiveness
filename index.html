@@ -83,10 +83,17 @@
     <!-- End -->
 
     <!-- Start of Fanfan -->
-    <button id="sidebar__button" class="w-6 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-center absolute right-7 top-[1.4375rem] z-[99999] data-[sidebar-expanded=true]:bg-[url('assets/images/icons/x.svg')]" data-sidebar-expanded="false" aria-controls="sidebar"></button>
+    <header class="bg-red-400 text-white">
+      <div class="container w-[85%] mx-auto flex justify-between">
+        <div class="text-sm py-4 cursor-pointer">
+          <a href="#"><span class="font-bold">Resep</span>nesia</a>
+        </div>
+        <button id="sidebar__button" class="w-6 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-center z-[99999] data-[sidebar-expanded=true]:bg-[url('assets/images/icons/x.svg')]" data-sidebar-expanded="false" aria-label="Sidebar menu" aria-controls="sidebar"></button>
+      </div>
+    </header>
 
     <!-- Sidebar -->
-    <div id="sidebar" class="z-[9999] translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0" aria-expanded="false">
+    <div id="sidebar" class="z-[9999] bg-white w-full translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 fixed top-0 right-0" aria-expanded="false">
       <div class="flex flex-col min-h-screen w-[87%] mx-auto pt-[1.5625rem] relative">
         <!-- -Title- -->
         <div class="text-sm mb-[1.4375rem] cursor-pointer">
