@@ -85,8 +85,8 @@
     <!-- Start of Fanfan -->
 
     <!-- Sidebar -->
-    <div class="min-h-screen z-[9999]">
-      <div class="w-[87%] mx-auto pt-[1.5625rem]">
+    <div class="z-[9999] relative">
+      <div class="flex flex-col min-h-screen w-[87%] mx-auto pt-[1.5625rem]">
         <div class="text-sm mb-[1.4375rem]"><span class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]/[.8]">Resep</span>nesia</div>
         <div class="w-[98%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative">
           <button class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2">
@@ -132,12 +132,13 @@
           </ul>
         </nav>
 
-        <div>
-          <span>Ikuti kami</span>
-          <div>
-            <img src="" />
-            <img src="" />
-            <img src="" />
+        <!-- -Ikuti kami- -->
+        <div class="flex flex-col justify-end grow mb-[1.875rem] mt-9">
+          <span class="text-sm text-center mb-[0.1875rem] block">Ikuti kami</span>
+          <div class="text-[22px] text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] flex gap-[0.6875rem] justify-center items-center">
+            <a class="cursor-pointer" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="cursor-pointer" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="cursor-pointer" href="#"><i class="fa-brands fa-square-facebook"></i></a>
           </div>
         </div>
       </div>
