@@ -18,7 +18,7 @@
 
     <script type="text/javascript" src="tailwind.config.js"></script>
   </head>
-  <body class="font-quicksand text-[#454545]">
+  <body class="font-quicksand text-[#454545] overflow-hidden">
     <!-- Start - To be deleted soon, just for example of how to connect with assets -->
     <!--     <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <br />
@@ -83,16 +83,17 @@
     <!-- End -->
 
     <!-- Start of Fanfan -->
+    <button id="sidebar__button" class="w-6 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-center absolute right-7 top-[1.4375rem] z-[99999] data-[sidebar-expanded=true]:bg-[url('assets/images/icons/x.svg')]" data-sidebar-expanded="false" aria-controls="sidebar"></button>
 
     <!-- Sidebar -->
-    <div class="z-[9999] relative">
-      <div class="flex flex-col min-h-screen w-[87%] mx-auto pt-[1.5625rem]">
+    <div id="sidebar" class="z-[9999] translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0" aria-expanded="false">
+      <div class="flex flex-col min-h-screen w-[87%] mx-auto pt-[1.5625rem] relative">
         <!-- -Title- -->
         <div class="text-sm mb-[1.4375rem] cursor-pointer">
           <a href="#"><span class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]/[.8]">Resep</span>nesia</a>
         </div>
         <!-- -Search Input- -->
-        <div class="w-[98%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative">
+        <div class="w-[99%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative">
           <button class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2">
             <img class="w-[16px] aspect-square" src="assets/images/icons/search-2.svg" loading="lazy" alt="Search" />
           </button>
@@ -158,5 +159,7 @@
     <!-- Start of Doni -->
     <!--  -->
     <!-- End of Doni -->
+
+    <script type="text/javascript" src="./assets/scripts/script.js"></script>
   </body>
 </html>
