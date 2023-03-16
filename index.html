@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="bg-white" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script
-      src="https://kit.fontawesome.com/1d7359658f.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Resepnesia</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="tailwind.config.js"></script>
+
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      @layer components {
+        .button__paling-populer {
+          @apply px-2.5 py-0.5 rounded-sm bg-white md:px-3 md:py-1 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E];
+        }
+
+        .button__paling-populer--gradient {
+          @apply text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white;
+        }
+      }
+    </style>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/1d7359658f.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="text-[#454545] font-quicksand">
     <!-- Start - To be deleted soon, just for example of how to connect with assets -->
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <!--     <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <br />
     <i class="fa-solid fa-envelope"></i>
     <br />
@@ -81,11 +98,151 @@
         <div class="stat-title">Tasks done</div>
         <div class="stat-desc text-secondary">31 tasks remaining</div>
       </div>
-    </div>
+    </div> -->
     <!-- End -->
 
     <!-- Start of Fanfan -->
-    <!--  -->
+
+    <!-- Header -->
+    <header>
+      <div class="container flex justify-between text-white w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
+        <div class="text-sm md:text-lg">
+          <a class="cursor-pointer" href="#"><span class="font-bold">Resep</span>nesia</a>
+        </div>
+        <button class="sidebar__button w-5 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-contain bg-center md:w-6" data-sidebar-expanded="false" aria-label="Sidebar menu" aria-controls="sidebar"></button>
+      </div>
+
+      <!-- Sidebar / Header on desktop -->
+      <div id="sidebar" class="w-full max-w-xs bg-white fixed top-0 bottom-0 right-0 overflow-y-auto translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 z-[9999] md:max-w-md xl:max-w-full xl:bg-transparent xl:static xl:translate-x-0" aria-expanded="false">
+        <div class="container flex flex-col w-[85%] min-h-full mx-auto pt-[1.5625rem] md:w-[85%] md:pt-[1.8125rem] xl:flex-row xl:w-[90%] xl:py-[2.375rem]">
+          <!-- -Title & Close Button- -->
+          <div class="flex justify-between">
+            <div class="text-sm mb-[1.4375rem] md:text-[0.9375rem] md:mb-[1.65rem] xl:text-[2rem] xl:mr-[2.1875rem] xl:mb-0">
+              <a class="cursor-pointer" href="#"><span class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]/[.7]">Resep</span>nesia</a>
+            </div>
+
+            <button class="sidebar__button self-start w-5 aspect-square bg-[url('assets/images/icons/x.svg')] bg-no-repeat bg-contain bg-center md:w-6 xl:hidden" aria-label="Sidebar menu" aria-controls="sidebar"></button>
+          </div>
+          <!-- -Search Input- -->
+          <div class="w-[99%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative md:mb-7 xl:hidden">
+            <button class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2 md:left-[0.8125rem]">
+              <img class="w-[1rem] aspect-square md:w-[1.125rem]" src="assets/images/icons/search-2.svg" loading="lazy" alt="Search" />
+            </button>
+            <input class="text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] bg-white placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-[0.9375rem] md:px-[2.625rem] md:py-3 md:placeholder:text-[0.9375rem]" type="text" placeholder="Cari sesuatu" />
+          </div>
+          <!-- -Navigation- -->
+          <nav class="[&_li]:flex [&_li]:gap-[1.125rem] text-sm sm:[&_li]:gap-[1.4rem] md:text-[0.9375rem] xl:flex xl:w-full">
+            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:[&_img]:hidden">
+              <li>
+                <img src="assets/images/icons/book.svg" />
+                <a href="#">Resep</a>
+              </li>
+              <li>
+                <img src="assets/images/icons/location.svg" />
+                <a href="#">Daerah</a>
+              </li>
+              <li class="xl:!hidden">
+                <img src="assets/images/icons/wishlist-2.svg" />
+                <a href="#">Disimpan</a>
+              </li>
+              <li>
+                <img src="assets/images/icons/quote.svg" />
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <img src="assets/images/icons/about.svg" />
+                <a href="#">Tentang</a>
+              </li>
+            </ul>
+
+            <hr class="my-7 md:my-8 border-t border-[#DDDDDD] xl:hidden" />
+
+            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
+              <li>
+                <img src="assets/images/icons/login.svg" />
+                <a href="#">Daftar</a>
+              </li>
+              <li>
+                <img src="assets/images/icons/sign-up.svg" />
+                <a href="#">Masuk</a>
+              </li>
+            </ul>
+
+            <ul class="hidden xl:flex xl:items-center xl:gap-[1.5625rem]">
+              <li>
+                <button class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
+              </li>
+              <li>
+                <button class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button>
+              </li>
+            </ul>
+          </nav>
+          <!-- -Ikuti kami- -->
+          <div class="flex flex-col justify-end grow mt-9 mb-[1.875rem] xl:hidden">
+            <span class="block text-sm text-center mb-[0.1875rem] md:text-[0.9375rem] md:mb-1">Ikuti kami</span>
+            <div class="flex justify-center items-center gap-[0.6875rem] text-[1.375rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] md:gap-3 md:text-2xl">
+              <a class="cursor-pointer" href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a class="cursor-pointer" href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a class="cursor-pointer" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------- -->
+    </header>
+    <!-- ------ -->
+
+    <!-- Hero -->
+    <section class="relative">
+      <div class="container text-white w-[85%] mx-auto pt-10 pb-32 md:w-[87%] xl:text-[#454545] xl:w-[90%] xl:pt-[4.375rem] xl:pb-[21.25rem]">
+        <!-- -Left Side- -->
+        <div class="max-w-xs md:max-w-[22.5rem] xl:max-w-[30.625rem]">
+          <!-- --Title-- -->
+          <h1 class="text-[2rem] font-bold leading-9 mb-2 md:text-4xl md:leading-[2.6rem] md:mb-3 xl:text-[3.25rem] xl:leading-[4.0625rem] xl:mb-[1.125rem] xl:capitalize">Buat masakan<br /><span class="xl:text-[#F95E5E]">nusantara</span> khas<br />daerahmu.</h1>
+          <!-- --Text-- -->
+          <p class="text-sm leading-[1.125rem] mb-2.5 md:text-base md:leading-5 md:mb-3.5 xl:text-2xl xl:leading-[1.875rem] xl:mb-[1.625rem]">Melestarikan masakan tradisional<br />merupakan kewajiban kita</p>
+          <!-- --Input-- -->
+          <div class="mb-1.5 relative md:mb-2.5 xl:mb-7">
+            <button class="w-4 aspect-square absolute left-[0.6875rem] top-1/2 -translate-y-1/2 bg-[url('assets/images/icons/search-3.svg')] bg-no-repeat bg-cover bg-center md:w-[1.125rem] md:left-3.5 xl:w-5 xl:left-4 xl:bg-[url('assets/images/icons/search-4.svg')]"></button>
+            <input class="text-[#454545] text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] rounded bg-white placeholder:text-[#CACACA] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-base md:px-11 md:py-3 md:placeholder:text-base xl:px-[2.875rem] xl:py-5 xl:border xl:border-[#CACACA] xl:rounded-lg" type="text" placeholder="Cari resep" />
+          </div>
+          <!-- --Paling Populer-- -->
+          <div class="flex items-center gap-1.5 sm:gap-2 xl:gap-5">
+            <span class="text-[0.625rem] md:text-xs xl:text-base">Paling populer:</span>
+            <div class="flex gap-[0.1875rem] text-[0.625rem] md:text-xs xl:gap-[0.6875rem] xl:text-base">
+              <button class="button__paling-populer"><span class="button__paling-populer--gradient">Rendang</span></button>
+              <button class="button__paling-populer"><span class="button__paling-populer--gradient">Onde-onde</span></button>
+              <button class="button__paling-populer"><span class="button__paling-populer--gradient">Bakpia keju</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- -Right Side (Images)- -->
+        <div class="hidden justify-end flex-wrap absolute right-0 md:flex md:max-w-[27.3rem] md:top-[2.35rem] xl:max-w-3xl xl:top-16">
+          <div class="flex">
+            <div>
+              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-1.png" alt="Makanan" />
+            </div>
+            <div>
+              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-2.png" alt="Makanan" />
+            </div>
+          </div>
+          <div class="flex">
+            <div>
+              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-3.png" alt="Makanan" />
+            </div>
+            <div>
+              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-4.png" alt="Makanan" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---- -->
+
+    <!-- Hero Background -->
+    <div class="before:absolute before:bg-[url('assets/images/hero-background-mobile.png')] before:bg-no-repeat before:bg-[length:100%_100%] before:bg-right-top before:top-0 before:right-0 before:w-full before:h-[32rem] before:z-[-999] sm:before:bg-none sm:after:absolute sm:after:bg-[url('assets/images/hero-background.png')] sm:after:bg-no-repeat sm:after:bg-[length:130%_auto] sm:after:bg-right-bottom sm:after:top-0 sm:after:right-0 sm:after:w-full sm:after:h-[29rem] sm:after:z-[-999] md:after:h-[35rem] xl:after:bg-contain xl:after:bg-top-right xl:after:h-[51rem]"></div>
+    <!-- --------------- -->
+
     <!-- End of Fanfan -->
 
     <!-- Start of Ikrom -->
@@ -95,5 +252,7 @@
     <!-- Start of Doni -->
     <!--  -->
     <!-- End of Doni -->
+
+    <script type="text/javascript" src="./assets/scripts/script.js"></script>
   </body>
 </html>
