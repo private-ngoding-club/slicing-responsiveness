@@ -18,7 +18,7 @@
 
     <script type="text/javascript" src="tailwind.config.js"></script>
   </head>
-  <body class="font-quicksand text-[#454545]">
+  <body class="text-[#454545] font-quicksand">
     <!-- Start - To be deleted soon, just for example of how to connect with assets -->
     <!--     <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <br />
@@ -86,7 +86,7 @@
 
     <!-- Header -->
     <header>
-      <div class="container w-[85%] mx-auto text-white py-4 flex justify-between md:w-[87%] md:py-5 xl:hidden">
+      <div class="container flex justify-between text-white w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
         <div class="text-sm md:text-lg">
           <a class="cursor-pointer" href="#"><span class="font-bold">Resep</span>nesia</a>
         </div>
@@ -94,8 +94,8 @@
       </div>
 
       <!-- Sidebar / Header on desktop -->
-      <div id="sidebar" class="z-[9999] bg-white w-full max-w-xs translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 fixed top-0 bottom-0 right-0 overflow-y-auto md:max-w-md xl:max-w-full xl:static xl:translate-x-0 xl:bg-transparent" aria-expanded="false">
-        <div class="container w-[85%] mx-auto flex flex-col min-h-full pt-[1.5625rem] md:w-[85%] md:pt-[1.8125rem] xl:w-[90%] xl:py-[2.375rem] xl:flex-row">
+      <div id="sidebar" class="w-full max-w-xs bg-white fixed top-0 bottom-0 right-0 overflow-y-auto translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 z-[9999] md:max-w-md xl:max-w-full xl:bg-transparent xl:static xl:translate-x-0" aria-expanded="false">
+        <div class="container flex flex-col w-[85%] min-h-full mx-auto pt-[1.5625rem] md:w-[85%] md:pt-[1.8125rem] xl:flex-row xl:w-[90%] xl:py-[2.375rem]">
           <!-- -Title & Close Button- -->
           <div class="flex justify-between">
             <div class="text-sm mb-[1.4375rem] md:text-[0.9375rem] md:mb-[1.65rem] xl:text-[2rem] xl:mr-[2.1875rem] xl:mb-0">
@@ -105,15 +105,15 @@
             <button class="sidebar__button self-start w-5 aspect-square bg-[url('assets/images/icons/x.svg')] bg-no-repeat bg-contain bg-center md:w-6 xl:hidden" aria-label="Sidebar menu" aria-controls="sidebar"></button>
           </div>
           <!-- -Search Input- -->
-          <div class="w-[99%] mb-[1.4375rem] border border-[#DDDDDD] rounded md:mb-7 relative xl:hidden">
+          <div class="w-[99%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative md:mb-7 xl:hidden">
             <button class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2 md:left-[0.8125rem]">
               <img class="w-[1rem] aspect-square md:w-[1.125rem]" src="assets/images/icons/search-2.svg" loading="lazy" alt="Search" />
             </button>
-            <input class="text-sm py-2.5 px-[0.6875rem] pl-[2.375rem] bg-white w-full placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-[0.9375rem] md:py-3 md:px-[2.625rem] md:placeholder:text-[0.9375rem]" type="text" placeholder="Cari sesuatu" />
+            <input class="text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] bg-white placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-[0.9375rem] md:px-[2.625rem] md:py-3 md:placeholder:text-[0.9375rem]" type="text" placeholder="Cari sesuatu" />
           </div>
           <!-- -Navigation- -->
-          <nav class="[&_li]:flex [&_li]:gap-[1.125rem] text-sm md:text-[0.9375rem] sm:[&_li]:gap-[1.4rem] xl:flex xl:w-full">
-            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:[&_img]:hidden xl:gap-[3.125rem]">
+          <nav class="[&_li]:flex [&_li]:gap-[1.125rem] text-sm sm:[&_li]:gap-[1.4rem] md:text-[0.9375rem] xl:flex xl:w-full">
+            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/book.svg" />
                 <a href="#">Resep</a>
@@ -138,7 +138,7 @@
 
             <hr class="my-7 md:my-8 border-t border-[#DDDDDD] xl:hidden" />
 
-            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:[&_img]:hidden xl:ml-auto xl:text-white xl:gap-[3.125rem] xl:mr-[3.125rem]">
+            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/login.svg" />
                 <a href="#">Daftar</a>
@@ -159,9 +159,9 @@
             </ul>
           </nav>
           <!-- -Ikuti kami- -->
-          <div class="flex flex-col justify-end grow mb-[1.875rem] mt-9 xl:hidden">
-            <span class="text-sm text-center mb-[0.1875rem] block md:text-[0.9375rem] md:mb-1">Ikuti kami</span>
-            <div class="text-[1.375rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] flex gap-[0.6875rem] justify-center items-center md:text-2xl md:gap-3">
+          <div class="flex flex-col justify-end grow mt-9 mb-[1.875rem] xl:hidden">
+            <span class="block text-sm text-center mb-[0.1875rem] md:text-[0.9375rem] md:mb-1">Ikuti kami</span>
+            <div class="flex justify-center items-center gap-[0.6875rem] text-[1.375rem] text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] md:gap-3 md:text-2xl">
               <a class="cursor-pointer" href="#"><i class="fa-brands fa-instagram"></i></a>
               <a class="cursor-pointer" href="#"><i class="fa-brands fa-twitter"></i></a>
               <a class="cursor-pointer" href="#"><i class="fa-brands fa-square-facebook"></i></a>
@@ -175,7 +175,7 @@
 
     <!-- Hero -->
     <section class="relative">
-      <div class="container w-[85%] mx-auto text-white pt-10 pb-32 md:w-[87%] xl:w-[90%] xl:pt-[4.375rem] xl:text-[#454545] xl:pb-[21.25rem]">
+      <div class="container text-white w-[85%] mx-auto pt-10 pb-32 md:w-[87%] xl:text-[#454545] xl:w-[90%] xl:pt-[4.375rem] xl:pb-[21.25rem]">
         <!-- -Left Side- -->
         <div class="max-w-xs md:max-w-[22.5rem] xl:max-w-[30.625rem]">
           <!-- --Title-- -->
@@ -184,16 +184,16 @@
           <p class="text-sm leading-[1.125rem] mb-2.5 md:text-base md:leading-5 md:mb-3.5 xl:text-2xl xl:leading-[1.875rem] xl:mb-[1.625rem]">Melestarikan masakan tradisional<br />merupakan kewajiban kita</p>
           <!-- --Input-- -->
           <div class="mb-1.5 relative md:mb-2.5 xl:mb-7">
-            <button class="absolute left-[0.6875rem] top-1/2 -translate-y-1/2 w-4 aspect-square bg-[url('assets/images/icons/search-3.svg')] bg-no-repeat bg-center bg-cover md:w-[1.125rem] md:left-3.5 xl:w-5 xl:left-4 xl:bg-[url('assets/images/icons/search-4.svg')]"></button>
-            <input class="text-[#454545] text-sm py-2.5 px-[0.6875rem] pl-[2.375rem] rounded bg-white w-full placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:px-11 md:py-3 md:py-3 md:text-base md:placeholder:text-base xl:px-[2.875rem] xl:py-5 xl:border xl:border-[#CACACA] xl:rounded-lg" type="text" placeholder="Cari resep" />
+            <button class="w-4 aspect-square absolute left-[0.6875rem] top-1/2 -translate-y-1/2 bg-[url('assets/images/icons/search-3.svg')] bg-no-repeat bg-cover bg-center md:w-[1.125rem] md:left-3.5 xl:w-5 xl:left-4 xl:bg-[url('assets/images/icons/search-4.svg')]"></button>
+            <input class="text-[#454545] text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] rounded bg-white placeholder:text-[#CACACA] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-base md:px-11 md:py-3 md:placeholder:text-base xl:px-[2.875rem] xl:py-5 xl:border xl:border-[#CACACA] xl:rounded-lg" type="text" placeholder="Cari resep" />
           </div>
           <!-- --Paling Populer-- -->
-          <div class="flex items-center gap-1.5 xm:gap-[2.5] xl:gap-5">
+          <div class="flex items-center gap-1.5 sm:gap-2 xl:gap-5">
             <span class="text-[0.625rem] md:text-xs xl:text-base">Paling populer:</span>
-            <div class="text-[0.625rem] flex gap-[0.1875rem] md:text-xs xl:text-base xl:gap-[0.6875rem]">
-              <button class="bg-white py-0.5 px-2.5 rounded-sm md:py-1 md:px-3 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white">Rendang</span></button>
-              <button class="bg-white py-0.5 px-2.5 rounded-sm md:py-1 md:px-3 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white">Onde-onde</span></button>
-              <button class="bg-white py-0.5 px-2.5 rounded-sm md:py-1 md:px-3 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white">Bakpia keju</span></button>
+            <div class="flex gap-[0.1875rem] text-[0.625rem] md:text-xs xl:gap-[0.6875rem] xl:text-base">
+              <button class="px-2.5 py-0.5 rounded-sm bg-white md:px-3 md:py-1 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white">Rendang</span></button>
+              <button class="px-2.5 py-0.5 rounded-sm bg-white md:px-3 md:py-1 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white">Onde-onde</span></button>
+              <button class="px-2.5 py-0.5 rounded-sm bg-white md:px-3 md:py-1 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] xl:text-white">Bakpia keju</span></button>
             </div>
           </div>
         </div>
