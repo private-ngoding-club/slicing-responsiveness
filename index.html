@@ -22,7 +22,7 @@
 
       @layer components {
         .section__title {
-          @apply text-2xl font-bold mb-[1.0625rem] relative before:w-[6.25rem] before:h-3 before:bg-[#f05454]/[.30] before:absolute before:bottom-[-0.14375rem] before:z-[-1] xl:text-[2.625rem] xl:text-center xl:mb-[2.875rem] xl:before:w-44 xl:before:h-[1.0625rem] xl:before:bottom-[-0.9375rem];
+          @apply text-2xl font-bold relative before:w-[6.25rem] before:h-3 before:bg-[#f05454]/[.30] before:absolute before:bottom-[-0.14375rem] before:z-[-1] xl:text-[2.625rem] md:text-3xl md:text-center xl:before:w-44 xl:before:h-[1.0625rem] xl:before:bottom-[-0.9375rem];
         }
 
         .button__paling-populer {
@@ -268,8 +268,8 @@
 
     <section>
       <div class="container w-[85%] mx-auto pb-[3.8125rem]">
-        <h2 class="section__title">Paling populer</h2>
-        <div class="xl:grid xl:grid-cols-3 xl:gap-5">
+        <h2 class="section__title mb-[1.0625rem] md:mb-6 lg:mb-7 xl:mb-[2.875rem]">Paling populer</h2>
+        <div class="sm:grid sm:grid-cols-2 sm:gap-[1.125rem] lg:grid-cols-3 lg:gap-5">
           <div id="paling-populer__column-1">
             <div id="paling-populer__large-items">
               <div id="paling-populer__item--large" class="mb-[1.625rem]">
@@ -385,7 +385,7 @@
             </div>
           </div>
 
-          <div id="paling-populer__column-2" class="hidden xl:block">
+          <div id="paling-populer__column-2" class="hidden lg:block">
             <div id="paling-populer__large-items">
               <div id="paling-populer__item--large" class="mb-[1.625rem]">
                 <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
@@ -500,7 +500,7 @@
             </div>
           </div>
 
-          <div id="paling-populer__column-3" class="hidden xl:block">
+          <div id="paling-populer__column-3" class="hidden sm:block">
             <div id="paling-populer__large-items">
               <div id="paling-populer__item--large" class="mb-[1.625rem]">
                 <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
