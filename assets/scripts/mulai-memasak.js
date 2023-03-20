@@ -99,7 +99,7 @@ const mulaiMemasak = [
 
 mulaiMemasak.forEach((makanan) => {
 	document.querySelector("#mulai-memasak__grid").innerHTML += `
-	    <div id="mulai-memasak__grid-item"  class="mb-5 xl:mb-[1.875rem]">
+	    <div id="mulai-memasak__grid-item"  class="mb-5 xl:mb-[1.625rem]">
 	      <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)] xl:h-[17.25rem] xl:mb-3">
 	        <img class="w-full h-full object-cover object-center rounded" src="${makanan.image}" alt="Makanan" loading="lazy" />
 	        <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer xl:w-[3.625rem] xl:h-[3.625rem]">
