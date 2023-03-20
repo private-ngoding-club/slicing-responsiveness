@@ -1,9 +1,9 @@
 tailwind.config = {
-	theme: {
-		extend: {
-			fontFamily: {
-				quicksand: ["Quicksand", "sans-serif"],
-			},
-		},
-	},
+  theme: {
+    extend: {
+      fontFamily: {
+        quicksand: ["Quicksand", "sans-serif"],
+      },
+    },
+  },
 };
