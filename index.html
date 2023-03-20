@@ -25,6 +25,14 @@
           @apply text-2xl font-bold relative before:w-[6.25rem] before:h-3 before:bg-[#f05454]/[.30] before:absolute before:bottom-[-0.14375rem] before:z-[-1] xl:text-[2.625rem] md:text-3xl md:text-center xl:before:w-44 xl:before:h-[1.0625rem] xl:before:bottom-[-0.9375rem];
         }
 
+        .section__button {
+          @apply flex items-center justify-center gap-2.5 text-white text-sm w-full py-3.5 rounded bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] sm:w-fit sm:mx-auto sm:px-6 md:text-[0.9375rem] md:py-4 md:rounded-md xl:rounded-lg xl:text-base xl:py-[1.125rem];
+        }
+
+        .section__button-arrow {
+          @apply text-[0.8125rem] md:text-sm xl:text-base;
+        }
+
         .button__paling-populer {
           @apply px-2.5 py-0.5 rounded-sm bg-white md:px-3 md:py-1 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E];
         }
@@ -551,6 +559,10 @@
     <section>
       <div class="container w-[85%] mx-auto pb-[4.5625rem]">
         <h2 class="section__title">Mulai memasak</h2>
+        <button class="section__button">
+          <span>Kunjungi halaman resep</span>
+          <i class="fa-solid fa-arrow-right section__button-arrow"></i>
+        </button>
       </div>
     </section>
 
