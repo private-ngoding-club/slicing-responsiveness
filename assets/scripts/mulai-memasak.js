@@ -1,4 +1,4 @@
-const masakan = [
+const mulaiMemasak = [
 	{
 		title: "Sate Bandeng",
 		lokasi: "Banten",
@@ -97,7 +97,7 @@ const masakan = [
 	},
 ];
 
-masakan.forEach((makanan) => {
+mulaiMemasak.forEach((makanan) => {
 	document.querySelector("#mulai-memasak__grid").innerHTML += `
 	    <div id="mulai-memasak__grid-item"  class="mb-5 xl:mb-[1.875rem]">
 	      <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)] xl:h-[17.25rem] xl:mb-3">
