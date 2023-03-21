@@ -40,6 +40,10 @@
         .button__paling-populer--gradient {
           @apply gradient--red xl:text-white;
         }
+
+        .daerah__grid-item {
+          @apply block aspect-[146/97] xl:aspect-[290/200] rounded relative bg-no-repeat bg-cover bg-center cursor-pointer before:bg-[#454545]/[0.5] before:w-full before:h-full before:rounded before:absolute after:text-white after:text-sm after:font-bold after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 xl:rounded-lg xl:before:rounded-lg xl:after:text-2xl;
+        }
       }
 
       @layer utilities {
@@ -572,6 +576,9 @@
     <section>
       <div class="container w-[85%] mx-auto pb-[4.375rem] sm:pb-24 md:w-[87%] md:pb-28 xl:w-[90%] xl:pb-56">
         <h2 class="section__title">Dari daerah mana kamu ?</h2>
+        <div class="grid grid-cols-2">
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/yogyakarta.png')] after:content-['Yogyakarta']"></a>
+        </div>
         <button class="section__button">
           <span>Cari daerahmu</span>
           <i class="fa-solid fa-arrow-right section__button-arrow"></i>
