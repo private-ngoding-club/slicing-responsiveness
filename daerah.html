@@ -38,7 +38,7 @@
     <script src="https://kit.fontawesome.com/1d7359658f.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="text-[#454545] font-quicksand">
+  <body class="text-[#454545] font-quicksand" style="font-family: 'Quicksand'">
     <header>
       <div class="container flex justify-between text-white w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
         <div class="text-sm md:text-lg">
@@ -95,20 +95,20 @@
             <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/login.svg" />
-                <a href="#">Daftar</a>
+                <a class="text-[#454545]" href="#">Daftar</a>
               </li>
               <li>
                 <img src="assets/images/icons/sign-up.svg" />
-                <a href="#">Masuk</a>
+                <a class="text-[#454545]" href="#">Masuk</a>
               </li>
             </ul>
 
             <ul class="hidden xl:flex xl:items-center xl:gap-[1.5625rem]">
               <li>
-                <button class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
+                <button class="fa-sharp fa-solid fa-magnifying-glass text-[#454545] w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
               </li>
               <li>
-                <button class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button>
+                <button class="fa-regular fa-bookmark text-[#454545] w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button>
               </li>
             </ul>
           </nav>
@@ -127,12 +127,12 @@
     </header>
 
     <section class="relative">
-      <div class="container w-[90%] mx-auto">
-        <div class="relative flex justify-between w-full">
-          <div class="-z-10 absolute top-4 h-3 w-20 bg-pink-100"></div>
-          <h2 class="text-black font-bold text-lg">Daerah</h2>
+      <div class="container mt-4 h-[200vh] w-[90%] mx-auto">
+        <div class="relative mb-10 flex justify-between w-full">
+          <div class="-z-10 absolute top-8 left-1 h-3 w-36 bg-[#F054544D]"></div>
+          <h2 class="text-[#454545] font-bold text-4xl">Daerah</h2>
 
-          <input class="bg-white border-2 rounded" type="search" />
+          <input class="bg-white w-[20%] border-2 text-sm rounded outline-none py-2.5 pl-[1rem]" type="search" placeholder="&#xf002;    Cari daerah" style="font-family: Arial, Helvetica, sans-serif, FontAwesome" />
         </div>
         <div class="grid grid-cols-3 w-full">
           <img src="assets/images/daerah/sumatera-barat.png" alt="daerah" />
@@ -150,6 +150,13 @@
           <img src="assets/images/daerah/bali.png" alt="daerah" />
           <img src="assets/images/daerah/ntt.png" alt="daerah" />
           <img src="assets/images/daerah/ntb.png" alt="daerah" />
+        </div>
+        <div class="flex pt-10 text-sm justify-center gap-3 text-white">
+          <button class="text-[#AF2E2E] font-bold"><</button>
+          <button class="bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] rounded-sm px-1.5">1</button>
+          <button class="text-[#454545] rounded-sm px-1.5">2</button>
+          <button class="text-[#454545] rounded-sm px-1.5">3</button>
+          <button class="text-[#AF2E2E] font-bold">></button>
         </div>
       </div>
     </section>
