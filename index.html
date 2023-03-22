@@ -40,6 +40,10 @@
         .button__paling-populer--gradient {
           @apply gradient--red xl:text-white;
         }
+
+        .daerah__grid-item {
+          @apply block aspect-[146/97] rounded relative bg-no-repeat bg-cover bg-center cursor-pointer before:bg-[#454545]/[0.5] before:w-full before:h-full before:rounded before:absolute after:text-white after:text-sm after:font-bold after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 sm:after:text-base lg:aspect-[270/180] lg:rounded-md lg:before:rounded-md lg:after:text-lg xl:aspect-[290/200] xl:rounded-lg xl:before:rounded-lg xl:after:text-2xl;
+        }
       }
 
       @layer utilities {
@@ -202,355 +206,8 @@
     <section>
       <div class="container w-[85%] mx-auto pb-[3.8125rem] sm:pb-[4.375rem] md:w-[87%] md:pb-[5.1rem] xl:w-[90%] xl:pb-[5.75rem]">
         <h2 class="section__title mb-[1.0625rem] md:mb-6 lg:mb-7 xl:mb-[3.125rem]">Paling populer</h2>
-        <div class="sm:grid sm:grid-cols-2 sm:gap-[1.125rem] xl:grid-cols-3 xl:gap-5">
-          <div id="paling-populer__column-1">
-            <div id="paling-populer__large-items">
-              <div id="paling-populer__item--large" class="mb-[1.625rem]">
-                <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded-lg" src="assets/images/paling-populer/rendang.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-[3.625rem] h-[3.375rem] rounded-bl-lg rounded-tr-lg bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-[1.375rem] gradient--red"></i>
-                  </button>
-                  <div class="flex gap-[0.1875rem] absolute left-1/2 bottom-3 -translate-x-1/2">
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between">
-                    <h3 class="text-[1.375rem] font-bold mb-2"><a href="#">Rendang</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Padang</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="text-sm leading-[1.125rem] w-10/12 mb-2">Makanan khas padang yang terkenal diseluruh Indonesia</p>
-                <div class="flex justify-between">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-2">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="text-sm">5/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">255 komentar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="paling-populer__small-items" class="grid grid-cols-2 gap-[1.125rem]">
-              <div id="paling-populer__item--small">
-                <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded" src="assets/images/paling-populer/sate-bandeng.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
-                  </button>
-                </div>
-                <div>
-                  <div class="flex flex-col mb-3">
-                    <h3 class="text-base font-bold"><a href="#">Sate Bandeng</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Banten</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="text-sm">4.7/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">25 komentar</span>
-                  </div>
-                </div>
-              </div>
-
-              <div id="paling-populer__item--small">
-                <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded" src="assets/images/paling-populer/nasi-lapola.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
-                  </button>
-                </div>
-                <div>
-                  <div class="flex flex-col mb-3">
-                    <h3 class="text-base font-bold"><a href="#">Nasi Lapola</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Maluku</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <span class="text-sm">4.5/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">76 komentar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="paling-populer__column-2" class="hidden xl:block">
-            <div id="paling-populer__large-items">
-              <div id="paling-populer__item--large" class="mb-[1.625rem]">
-                <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded-lg" src="assets/images/paling-populer/papeda.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-[3.625rem] h-[3.375rem] rounded-bl-lg rounded-tr-lg bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-[1.375rem] gradient--red"></i>
-                  </button>
-                  <div class="flex gap-[0.1875rem] absolute left-1/2 bottom-3 -translate-x-1/2">
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between">
-                    <h3 class="text-[1.375rem] font-bold mb-2"><a href="#">Papeda</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Papua</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="text-sm leading-[1.125rem] w-10/12 mb-2">Makanan khas padang yang terkenal diseluruh Indonesia</p>
-                <div class="flex justify-between">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-2">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <span class="text-sm">4.5/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">53 komentar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="paling-populer__small-items" class="grid grid-cols-2 gap-[1.125rem]">
-              <div id="paling-populer__item--small">
-                <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded" src="assets/images/paling-populer/nasi-lengko.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
-                  </button>
-                </div>
-                <div>
-                  <div class="flex flex-col mb-3">
-                    <h3 class="text-base font-bold"><a href="#">Nasi Lengko</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Cirebon</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <span class="text-sm">4.5/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">90 komentar</span>
-                  </div>
-                </div>
-              </div>
-
-              <div id="paling-populer__item--small">
-                <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded" src="assets/images/paling-populer/pedesan-entog.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
-                  </button>
-                </div>
-                <div>
-                  <div class="flex flex-col mb-3">
-                    <h3 class="text-base font-bold"><a href="#">Pedesan Entog</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Indramayu</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="text-sm">4.7/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">54 komentar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="paling-populer__column-3" class="hidden sm:block">
-            <div id="paling-populer__large-items">
-              <div id="paling-populer__item--large" class="mb-[1.625rem]">
-                <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded-lg" src="assets/images/paling-populer/bakpia-big.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-[3.625rem] h-[3.375rem] rounded-bl-lg rounded-tr-lg bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-[1.375rem] gradient--red"></i>
-                  </button>
-                  <div class="flex gap-[0.1875rem] absolute left-1/2 bottom-3 -translate-x-1/2">
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E] cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                    <span class="w-[0.4375rem] aspect-square rounded-full bg-white cursor-pointer"></span>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between">
-                    <h3 class="text-[1.375rem] font-bold mb-2"><a href="#">Bakpia</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Yogyakarta</span>
-                    </div>
-                  </div>
-                </div>
-                <p class="text-sm leading-[1.125rem] w-10/12 mb-2">Makanan khas padang yang terkenal diseluruh Indonesia</p>
-                <div class="flex justify-between">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-2">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="text-sm">5/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">113 komentar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="paling-populer__small-items" class="grid grid-cols-2 gap-[1.125rem]">
-              <div id="paling-populer__item--small">
-                <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded" src="assets/images/paling-populer/mie-gomak.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
-                  </button>
-                </div>
-                <div>
-                  <div class="flex flex-col mb-3">
-                    <h3 class="text-base font-bold"><a href="#">Mie Gomak</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Sumatra Utara</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="text-sm">4.7/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">89 komentar</span>
-                  </div>
-                </div>
-              </div>
-
-              <div id="paling-populer__item--small">
-                <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
-                  <img class="w-full h-full object-cover object-center rounded" src="assets/images/paling-populer/cumi-cah-kangkung.png" alt="Makanan" loading="lazy" />
-                  <button class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
-                    <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
-                  </button>
-                </div>
-                <div>
-                  <div class="flex flex-col mb-3">
-                    <h3 class="text-base font-bold"><a href="#">Cumi Cah Kangkung</a></h3>
-                    <div>
-                      <i class="fa-sharp fa-solid fa-location-dot text-sm mr-px gradient--red"></i>
-                      <span class="text-xs gradient--red">Jambi</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-0.5">
-                  <div class="flex items-center">
-                    <div class="text-[#FFA800] text-[0.8125rem] mr-1">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <span class="text-sm">4.7/5</span>
-                  </div>
-                  <div class="flex items-center text-[#A3A3A3]">
-                    <i class="fa-solid fa-comments text-[0.8125rem] mr-[0.1875rem]"></i>
-                    <span class="text-sm">94 komentar</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="paling-populer__grid-column-1" class="grid grid-rows-1 auto-rows-[0] grid-cols-1 mb-5 overflow-y-hidden sm:grid-cols-2 sm:gap-x-6 xl:grid-cols-3 xl:gap-x-[1.6875rem] xl:mb-[1.375rem]"></div>
+        <div id="paling-populer__grid-column-2" class="grid grid-rows-1 auto-rows-[0] grid-cols-2 overflow-y-hidden gap-x-[1.125rem] sm:grid-cols-4 xl:grid-cols-6 xl:gap-x-5"></div>
       </div>
     </section>
     <!-- -------------- -->
@@ -566,8 +223,27 @@
         </button>
       </div>
     </section>
-
     <!-- ------------- -->
+
+    <!-- Daerah -->
+    <section>
+      <div class="container w-[85%] mx-auto pb-[4.375rem] sm:pb-24 md:w-[87%] md:pb-28 xl:w-[90%] xl:pb-56">
+        <h2 class="section__title mb-5 md:mb-[1.375rem] lg:mb-[1.625rem] xl:mb-9">Dari daerah mana kamu ?</h2>
+        <div class="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 xl:gap-[1.65625rem]">
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/yogyakarta.png')] after:content-['Yogyakarta']"></a>
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/jakarta.png')] after:content-['Jakarta']"></a>
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/bandung.png')] after:content-['Bandung']"></a>
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/papua.png')] after:content-['Papua']"></a>
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/aceh.png')] after:content-['Aceh'] lg:hidden"></a>
+          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/kalimantan.png')] after:content-['Kalimantan'] lg:hidden"></a>
+        </div>
+        <button class="section__button mt-10 xl:mt-7">
+          <span>Cari daerahmu</span>
+          <i class="fa-solid fa-arrow-right section__button-arrow"></i>
+        </button>
+      </div>
+    </section>
+    <!-- ------ -->
 
     <!-- End of Fanfan -->
 
@@ -580,6 +256,7 @@
     <!-- End of Doni -->
 
     <script type="text/javascript" src="./assets/scripts/script.js"></script>
+    <script type="text/javascript" src="./assets/scripts/paling-populer.js"></script>
     <script type="text/javascript" src="./assets/scripts/mulai-memasak.js"></script>
   </body>
 </html>
