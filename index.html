@@ -9,7 +9,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet" />
 
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -44,6 +46,41 @@
         .daerah__grid-item {
           @apply block aspect-[146/97] rounded relative bg-no-repeat bg-cover bg-center cursor-pointer before:bg-[#454545]/[0.5] before:w-full before:h-full before:rounded before:absolute after:text-white after:text-sm after:font-bold after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 sm:after:text-base lg:aspect-[270/180] lg:rounded-md lg:before:rounded-md lg:after:text-lg xl:aspect-[290/200] xl:rounded-lg xl:before:rounded-lg xl:after:text-2xl;
         }
+
+        .footer {
+          background: linear-gradient(
+              159.87deg,
+              rgba(240, 84, 84, 1) 10%,
+              rgba(152, 50, 50, 0.7) 48%
+            ),
+            linear-gradient(
+              110deg,
+              rgba(240, 84, 84, 1) 53%,
+              rgba(152, 50, 50, 0) 80%
+            ),
+            url("assets/images/bg-footer-1.png");
+          background-size: auto 100%;
+
+          @apply flex justify-between flex-col mt-auto w-full h-full text-white bg-right bg-no-repeat gap-0;
+        }
+
+        @media (max-width: 768px) {
+          .footer {
+            background: linear-gradient(
+                180deg,
+                rgba(240, 84, 84, 1) 0%,
+                rgba(152, 50, 50, 0.7) 0%
+              ),
+              linear-gradient(
+                180deg,
+                rgba(240, 84, 84, 1) 5%,
+                rgba(152, 50, 50, 0) 80%
+              ),
+              url(assets/images/bg-footer-1.png);
+
+            @apply bg-center bg-no-repeat bg-cover items-center text-center;
+          }
+        }
       }
 
       @layer utilities {
@@ -54,44 +91,80 @@
     </style>
 
     <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css" />
 
     <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/1d7359658f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1d7359658f.js"
+      crossorigin="anonymous"></script>
   </head>
   <body class="text-[#454545] font-quicksand">
     <!-- Start of Fanfan -->
 
     <!-- Header -->
     <header>
-      <div class="container flex justify-between text-white w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
+      <div
+        class="container flex justify-between text-white w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
         <div class="text-sm md:text-lg">
-          <a class="cursor-pointer" href="#"><span class="font-bold">Resep</span>nesia</a>
+          <a class="cursor-pointer" href="#"
+            ><span class="font-bold">Resep</span>nesia</a
+          >
         </div>
-        <button class="sidebar__button w-5 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-contain bg-center md:w-6" data-sidebar-expanded="false" aria-label="Sidebar menu" aria-controls="sidebar"></button>
+        <button
+          class="sidebar__button w-5 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-contain bg-center md:w-6"
+          data-sidebar-expanded="false"
+          aria-label="Sidebar menu"
+          aria-controls="sidebar"></button>
       </div>
 
       <!-- Sidebar / Header on desktop -->
-      <div id="sidebar" class="w-full max-w-xs bg-white fixed top-0 bottom-0 right-0 overflow-y-auto translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 z-[9999] md:max-w-md xl:max-w-full xl:bg-transparent xl:static xl:translate-x-0" aria-expanded="false">
-        <div class="container flex flex-col w-[85%] min-h-full mx-auto pt-[1.5625rem] md:w-[85%] md:pt-[1.8125rem] xl:flex-row xl:w-[90%] xl:py-[2.375rem]">
+      <div
+        id="sidebar"
+        class="w-full max-w-xs bg-white fixed top-0 bottom-0 right-0 overflow-y-auto translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 z-[9999] md:max-w-md xl:max-w-full xl:bg-transparent xl:static xl:translate-x-0"
+        aria-expanded="false">
+        <div
+          class="container flex flex-col w-[85%] min-h-full mx-auto pt-[1.5625rem] md:w-[85%] md:pt-[1.8125rem] xl:flex-row xl:w-[90%] xl:py-[2.375rem]">
           <!-- -Title & Close Button- -->
           <div class="flex justify-between">
-            <div class="text-sm mb-[1.4375rem] md:text-[0.9375rem] md:mb-[1.65rem] xl:text-[2rem] xl:mr-[2.1875rem] xl:mb-0">
-              <a class="cursor-pointer" href="#"><span class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]/[.7]">Resep</span>nesia</a>
+            <div
+              class="text-sm mb-[1.4375rem] md:text-[0.9375rem] md:mb-[1.65rem] xl:text-[2rem] xl:mr-[2.1875rem] xl:mb-0">
+              <a class="cursor-pointer" href="#"
+                ><span
+                  class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]/[.7]"
+                  >Resep</span
+                >nesia</a
+              >
             </div>
 
-            <button class="sidebar__button self-start w-5 aspect-square bg-[url('assets/images/icons/x.svg')] bg-no-repeat bg-contain bg-center md:w-6 xl:hidden" aria-label="Sidebar menu" aria-controls="sidebar"></button>
+            <button
+              class="sidebar__button self-start w-5 aspect-square bg-[url('assets/images/icons/x.svg')] bg-no-repeat bg-contain bg-center md:w-6 xl:hidden"
+              aria-label="Sidebar menu"
+              aria-controls="sidebar"></button>
           </div>
           <!-- -Search Input- -->
-          <div class="w-[99%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative md:mb-7 xl:hidden">
-            <button class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2 md:left-[0.8125rem]">
-              <img class="w-[1rem] aspect-square md:w-[1.125rem]" src="assets/images/icons/search-2.svg" loading="lazy" alt="Search" />
+          <div
+            class="w-[99%] mb-[1.4375rem] border border-[#DDDDDD] rounded relative md:mb-7 xl:hidden">
+            <button
+              class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2 md:left-[0.8125rem]">
+              <img
+                class="w-[1rem] aspect-square md:w-[1.125rem]"
+                src="assets/images/icons/search-2.svg"
+                loading="lazy"
+                alt="Search" />
             </button>
-            <input class="text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] bg-white placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-[0.9375rem] md:px-[2.625rem] md:py-3 md:placeholder:text-[0.9375rem]" type="text" placeholder="Cari sesuatu" />
+            <input
+              class="text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] bg-white placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-[0.9375rem] md:px-[2.625rem] md:py-3 md:placeholder:text-[0.9375rem]"
+              type="text"
+              placeholder="Cari sesuatu" />
           </div>
           <!-- -Navigation- -->
-          <nav class="[&_li]:flex [&_li]:gap-[1.125rem] text-sm sm:[&_li]:gap-[1.4rem] md:text-[0.9375rem] xl:flex xl:w-full">
-            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:[&_img]:hidden">
+          <nav
+            class="[&_li]:flex [&_li]:gap-[1.125rem] text-sm sm:[&_li]:gap-[1.4rem] md:text-[0.9375rem] xl:flex xl:w-full">
+            <ul
+              class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/book.svg" />
                 <a href="#">Resep</a>
@@ -116,7 +189,8 @@
 
             <hr class="my-7 md:my-8 border-t border-[#DDDDDD] xl:hidden" />
 
-            <ul class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
+            <ul
+              class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/login.svg" />
                 <a href="#">Daftar</a>
@@ -129,20 +203,33 @@
 
             <ul class="hidden xl:flex xl:items-center xl:gap-[1.5625rem]">
               <li>
-                <button class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
+                <button
+                  class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
               </li>
               <li>
-                <button class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button>
+                <button
+                  class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button>
               </li>
             </ul>
           </nav>
           <!-- -Ikuti kami- -->
-          <div class="flex flex-col justify-end grow mt-9 mb-[1.875rem] xl:hidden">
-            <span class="block text-sm text-center mb-[0.1875rem] md:text-[0.9375rem] md:mb-1">Ikuti kami</span>
-            <div class="flex justify-center items-center gap-[0.6875rem] text-[1.375rem] md:gap-3 md:text-2xl">
-              <a class="cursor-pointer" href="#"><i class="fa-brands fa-instagram gradient--red"></i></a>
-              <a class="cursor-pointer" href="#"><i class="fa-brands fa-twitter gradient--red"></i></a>
-              <a class="cursor-pointer" href="#"><i class="fa-brands fa-square-facebook gradient--red"></i></a>
+          <div
+            class="flex flex-col justify-end grow mt-9 mb-[1.875rem] xl:hidden">
+            <span
+              class="block text-sm text-center mb-[0.1875rem] md:text-[0.9375rem] md:mb-1"
+              >Ikuti kami</span
+            >
+            <div
+              class="flex justify-center items-center gap-[0.6875rem] text-[1.375rem] md:gap-3 md:text-2xl">
+              <a class="cursor-pointer" href="#"
+                ><i class="fa-brands fa-instagram gradient--red"></i
+              ></a>
+              <a class="cursor-pointer" href="#"
+                ><i class="fa-brands fa-twitter gradient--red"></i
+              ></a>
+              <a class="cursor-pointer" href="#"
+                ><i class="fa-brands fa-square-facebook gradient--red"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -153,44 +240,80 @@
 
     <!-- Hero -->
     <section class="relative">
-      <div class="container text-white w-[85%] mx-auto pt-10 pb-32 sm:pb-40 md:w-[87%] md:pb-48 xl:text-[#454545] xl:w-[90%] xl:pt-[4.375rem] xl:pb-[21.25rem]">
+      <div
+        class="container text-white w-[85%] mx-auto pt-10 pb-32 sm:pb-40 md:w-[87%] md:pb-48 xl:text-[#454545] xl:w-[90%] xl:pt-[4.375rem] xl:pb-[21.25rem]">
         <!-- -Left Side- -->
         <div class="max-w-xs md:max-w-[22.5rem] xl:max-w-[30.625rem]">
           <!-- --Title-- -->
-          <h1 class="text-[2rem] font-bold leading-9 mb-2 md:text-4xl md:leading-[2.6rem] md:mb-3 xl:text-[3.25rem] xl:leading-[4.0625rem] xl:mb-[1.125rem] xl:capitalize">Buat masakan<br /><span class="xl:text-[#F95E5E]">nusantara</span> khas<br />daerahmu.</h1>
+          <h1
+            class="text-[2rem] font-bold leading-9 mb-2 md:text-4xl md:leading-[2.6rem] md:mb-3 xl:text-[3.25rem] xl:leading-[4.0625rem] xl:mb-[1.125rem] xl:capitalize">
+            Buat masakan<br /><span class="xl:text-[#F95E5E]">nusantara</span>
+            khas<br />daerahmu.
+          </h1>
           <!-- --Text-- -->
-          <p class="text-sm leading-[1.125rem] mb-2.5 md:text-base md:leading-5 md:mb-3.5 xl:text-2xl xl:leading-[1.875rem] xl:mb-[1.625rem]">Melestarikan masakan tradisional<br />merupakan kewajiban kita</p>
+          <p
+            class="text-sm leading-[1.125rem] mb-2.5 md:text-base md:leading-5 md:mb-3.5 xl:text-2xl xl:leading-[1.875rem] xl:mb-[1.625rem]">
+            Melestarikan masakan tradisional<br />merupakan kewajiban kita
+          </p>
           <!-- --Input-- -->
           <div class="mb-1.5 relative md:mb-2.5 xl:mb-7">
-            <button class="w-4 aspect-square absolute left-[0.6875rem] top-1/2 -translate-y-1/2 bg-[url('assets/images/icons/search-3.svg')] bg-no-repeat bg-cover bg-center md:w-[1.125rem] md:left-3.5 xl:w-5 xl:left-4 xl:bg-[url('assets/images/icons/search-4.svg')]"></button>
-            <input class="text-[#454545] text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] rounded bg-white placeholder:text-[#CACACA] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-base md:px-11 md:py-3 md:placeholder:text-base xl:px-[2.875rem] xl:py-5 xl:border xl:border-[#CACACA] xl:rounded-lg" type="text" placeholder="Cari resep" />
+            <button
+              class="w-4 aspect-square absolute left-[0.6875rem] top-1/2 -translate-y-1/2 bg-[url('assets/images/icons/search-3.svg')] bg-no-repeat bg-cover bg-center md:w-[1.125rem] md:left-3.5 xl:w-5 xl:left-4 xl:bg-[url('assets/images/icons/search-4.svg')]"></button>
+            <input
+              class="text-[#454545] text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] rounded bg-white placeholder:text-[#CACACA] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-base md:px-11 md:py-3 md:placeholder:text-base xl:px-[2.875rem] xl:py-5 xl:border xl:border-[#CACACA] xl:rounded-lg"
+              type="text"
+              placeholder="Cari resep" />
           </div>
           <!-- --Paling Populer-- -->
           <div class="flex items-center gap-1.5 sm:gap-2 xl:gap-5">
-            <span class="text-[0.625rem] md:text-xs xl:text-base">Paling populer:</span>
-            <div class="flex gap-[0.1875rem] text-[0.625rem] md:text-xs xl:gap-[0.6875rem] xl:text-base">
-              <button class="button__paling-populer"><span class="button__paling-populer--gradient">Rendang</span></button>
-              <button class="button__paling-populer"><span class="button__paling-populer--gradient">Onde-onde</span></button>
-              <button class="button__paling-populer"><span class="button__paling-populer--gradient">Bakpia keju</span></button>
+            <span class="text-[0.625rem] md:text-xs xl:text-base"
+              >Paling populer:</span
+            >
+            <div
+              class="flex gap-[0.1875rem] text-[0.625rem] md:text-xs xl:gap-[0.6875rem] xl:text-base">
+              <button class="button__paling-populer">
+                <span class="button__paling-populer--gradient">Rendang</span>
+              </button>
+              <button class="button__paling-populer">
+                <span class="button__paling-populer--gradient">Onde-onde</span>
+              </button>
+              <button class="button__paling-populer">
+                <span class="button__paling-populer--gradient"
+                  >Bakpia keju</span
+                >
+              </button>
             </div>
           </div>
         </div>
         <!-- -Right Side (Images)- -->
-        <div class="hidden justify-end flex-wrap absolute right-0 md:flex md:max-w-[27.3rem] md:top-[2.35rem] xl:max-w-3xl xl:top-16">
+        <div
+          class="hidden justify-end flex-wrap absolute right-0 md:flex md:max-w-[27.3rem] md:top-[2.35rem] xl:max-w-3xl xl:top-16">
           <div class="flex">
             <div>
-              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-1.png" alt="Makanan" />
+              <img
+                class="w-auto md:h-[9rem] xl:h-full"
+                src="assets/images/hero-1.png"
+                alt="Makanan" />
             </div>
             <div>
-              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-2.png" alt="Makanan" />
+              <img
+                class="w-auto md:h-[9rem] xl:h-full"
+                src="assets/images/hero-2.png"
+                alt="Makanan" />
             </div>
           </div>
           <div class="flex">
             <div>
-              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-3.png" alt="Makanan" />
+              <img
+                class="w-auto md:h-[9rem] xl:h-full"
+                src="assets/images/hero-3.png"
+                alt="Makanan" />
             </div>
             <div>
-              <img class="w-auto md:h-[9rem] xl:h-full" src="assets/images/hero-4.png" alt="Makanan" />
+              <img
+                class="w-auto md:h-[9rem] xl:h-full"
+                src="assets/images/hero-4.png"
+                alt="Makanan" />
             </div>
           </div>
         </div>
@@ -199,24 +322,39 @@
     <!-- ---- -->
 
     <!-- Hero Background -->
-    <div class="before:absolute before:bg-[url('assets/images/hero-background-mobile.png')] before:bg-no-repeat before:bg-[length:100%_100%] before:bg-right-top before:top-0 before:right-0 before:w-full before:h-[32rem] before:z-[-999] sm:before:bg-none sm:after:absolute sm:after:bg-[url('assets/images/hero-background.png')] sm:after:bg-no-repeat sm:after:bg-[length:130%_auto] sm:after:bg-right-bottom sm:after:top-0 sm:after:right-0 sm:after:w-full sm:after:h-[29rem] sm:after:z-[-999] md:after:h-[35rem] xl:after:bg-contain xl:after:bg-top-right xl:after:h-[51rem]"></div>
+    <div
+      class="before:absolute before:bg-[url('assets/images/hero-background-mobile.png')] before:bg-no-repeat before:bg-[length:100%_100%] before:bg-right-top before:top-0 before:right-0 before:w-full before:h-[32rem] before:z-[-999] sm:before:bg-none sm:after:absolute sm:after:bg-[url('assets/images/hero-background.png')] sm:after:bg-no-repeat sm:after:bg-[length:130%_auto] sm:after:bg-right-bottom sm:after:top-0 sm:after:right-0 sm:after:w-full sm:after:h-[29rem] sm:after:z-[-999] md:after:h-[35rem] xl:after:bg-contain xl:after:bg-top-right xl:after:h-[51rem]"></div>
     <!-- --------------- -->
 
     <!-- Paling Populer -->
     <section>
-      <div class="container w-[85%] mx-auto pb-[3.8125rem] sm:pb-[4.375rem] md:w-[87%] md:pb-[5.1rem] xl:w-[90%] xl:pb-[5.75rem]">
-        <h2 class="section__title mb-[1.0625rem] md:mb-6 lg:mb-7 xl:mb-[3.125rem]">Paling populer</h2>
-        <div id="paling-populer__grid-column-1" class="grid grid-rows-1 auto-rows-[0] grid-cols-1 mb-5 overflow-y-hidden sm:grid-cols-2 sm:gap-x-6 xl:grid-cols-3 xl:gap-x-[1.6875rem] xl:mb-[1.375rem]"></div>
-        <div id="paling-populer__grid-column-2" class="grid grid-rows-1 auto-rows-[0] grid-cols-2 overflow-y-hidden gap-x-[1.125rem] sm:grid-cols-4 xl:grid-cols-6 xl:gap-x-5"></div>
+      <div
+        class="container w-[85%] mx-auto pb-[3.8125rem] sm:pb-[4.375rem] md:w-[87%] md:pb-[5.1rem] xl:w-[90%] xl:pb-[5.75rem]">
+        <h2
+          class="section__title mb-[1.0625rem] md:mb-6 lg:mb-7 xl:mb-[3.125rem]">
+          Paling populer
+        </h2>
+        <div
+          id="paling-populer__grid-column-1"
+          class="grid grid-rows-1 auto-rows-[0] grid-cols-1 mb-5 overflow-y-hidden sm:grid-cols-2 sm:gap-x-6 xl:grid-cols-3 xl:gap-x-[1.6875rem] xl:mb-[1.375rem]"></div>
+        <div
+          id="paling-populer__grid-column-2"
+          class="grid grid-rows-1 auto-rows-[0] grid-cols-2 overflow-y-hidden gap-x-[1.125rem] sm:grid-cols-4 xl:grid-cols-6 xl:gap-x-5"></div>
       </div>
     </section>
     <!-- -------------- -->
 
     <!-- Mulai Memasak -->
     <section>
-      <div class="container w-[85%] mx-auto pb-[4.5625rem] sm:pb-20 md:w-[87%] md:pb-24 xl:w-[90%] xl:pb-[12.3125rem]">
-        <h2 class="section__title mb-5 md:mb-[1.375rem] lg:mb-[1.625rem] xl:mb-10">Mulai memasak</h2>
-        <div id="mulai-memasak__grid" class="grid grid-cols-2 grid-rows-3 auto-rows-[0] gap-x-5 overflow-y-hidden sm:grid-cols-3 xl:grid-cols-4 xl:gap-x-9"></div>
+      <div
+        class="container w-[85%] mx-auto pb-[4.5625rem] sm:pb-20 md:w-[87%] md:pb-24 xl:w-[90%] xl:pb-[12.3125rem]">
+        <h2
+          class="section__title mb-5 md:mb-[1.375rem] lg:mb-[1.625rem] xl:mb-10">
+          Mulai memasak
+        </h2>
+        <div
+          id="mulai-memasak__grid"
+          class="grid grid-cols-2 grid-rows-3 auto-rows-[0] gap-x-5 overflow-y-hidden sm:grid-cols-3 xl:grid-cols-4 xl:gap-x-9"></div>
         <button class="section__button mt-5 xl:mt-1.5">
           <span>Kunjungi halaman resep</span>
           <i class="fa-solid fa-arrow-right section__button-arrow"></i>
@@ -227,15 +365,32 @@
 
     <!-- Daerah -->
     <section>
-      <div class="container w-[85%] mx-auto pb-[4.375rem] sm:pb-24 md:w-[87%] md:pb-28 xl:w-[90%] xl:pb-56">
-        <h2 class="section__title mb-5 md:mb-[1.375rem] lg:mb-[1.625rem] xl:mb-9">Dari daerah mana kamu ?</h2>
-        <div class="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 xl:gap-[1.65625rem]">
-          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/yogyakarta.png')] after:content-['Yogyakarta']"></a>
-          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/jakarta.png')] after:content-['Jakarta']"></a>
-          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/bandung.png')] after:content-['Bandung']"></a>
-          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/papua.png')] after:content-['Papua']"></a>
-          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/aceh.png')] after:content-['Aceh'] lg:hidden"></a>
-          <a href="#" class="daerah__grid-item bg-[url('./assets/images/daerah/kalimantan.png')] after:content-['Kalimantan'] lg:hidden"></a>
+      <div
+        class="container w-[85%] mx-auto pb-[4.375rem] sm:pb-24 md:w-[87%] md:pb-28 xl:w-[90%] xl:pb-56">
+        <h2
+          class="section__title mb-5 md:mb-[1.375rem] lg:mb-[1.625rem] xl:mb-9">
+          Dari daerah mana kamu ?
+        </h2>
+        <div
+          class="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4 xl:gap-[1.65625rem]">
+          <a
+            href="#"
+            class="daerah__grid-item bg-[url('./assets/images/daerah/yogyakarta.png')] after:content-['Yogyakarta']"></a>
+          <a
+            href="#"
+            class="daerah__grid-item bg-[url('./assets/images/daerah/jakarta.png')] after:content-['Jakarta']"></a>
+          <a
+            href="#"
+            class="daerah__grid-item bg-[url('./assets/images/daerah/bandung.png')] after:content-['Bandung']"></a>
+          <a
+            href="#"
+            class="daerah__grid-item bg-[url('./assets/images/daerah/papua.png')] after:content-['Papua']"></a>
+          <a
+            href="#"
+            class="daerah__grid-item bg-[url('./assets/images/daerah/aceh.png')] after:content-['Aceh'] lg:hidden"></a>
+          <a
+            href="#"
+            class="daerah__grid-item bg-[url('./assets/images/daerah/kalimantan.png')] after:content-['Kalimantan'] lg:hidden"></a>
         </div>
         <button class="section__button mt-10 xl:mt-7">
           <span>Cari daerahmu</span>
@@ -255,8 +410,96 @@
     <!--  -->
     <!-- End of Doni -->
 
+    <div class="footer py-10 md:py-16 px-16 md:px-20">
+      <div
+        class="flex justify-between w-full flex-col md:flex-row items-center md:items-start">
+        <div class="flex flex-col md:max-w-xs">
+          <span class="text-4xl mb-4"><b>Resep</b>nesia</span>
+          <p class="mb-4">
+            <b>Resepnesia</b> adalah website penyedia resep khas nusantara.
+            Tujuan kami untuk melestarikan budaya di bidang kuliner.
+          </p>
+        </div>
+
+        <div class="flex flex-col">
+          <a class="link link-hover mb-4" href="#">Tentang</a>
+          <a class="link link-hover mb-4" href="#">Hubungi</a>
+          <a class="link link-hover mb-4" href="#">Syarat dan ketentuan</a>
+          <a class="link link-hover mb-4" href="#">Masukan dan Bantuan</a>
+        </div>
+
+        <div class="hidden md:block">
+          <img
+            src="assets/images/footer-76.png"
+            alt="Logo"
+            loading="lazy"
+            width="150"
+            height="60" />
+        </div>
+
+        <div class="flex flex-col-reverse md:flex-col w-full md:w-fit">
+          <div class="">
+            <label for="subscribe-form" class="md:font-bold">
+              Berlangganan Email
+            </label>
+            <div class="form-control flex flex-col md:flex-row mt-4 gap-4">
+              <div class="input-group">
+                <span
+                  class="bg-white border-0 text-gray-300 btn btn-square !rounded-l-sm md:!rounded-l-md">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input
+                  id="subscribe-form"
+                  type="text"
+                  placeholder="Masukan email kamu"
+                  class="input input-ghost bg-white pl-0 placeholder:text-gray-300 w-full !rounded-r-sm md:!rounded-r-md" />
+              </div>
+              <button
+                class="btn bg-red-800 border-0 text-slate-100 !rounded-sm md:!rounded-md px-8">
+                Kirim
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex mt-8 md:mt-32 mb-8 md:mb-4 mx-auto md:mr-0 md:ml-auto">
+            <button>English</button>
+            <span class="mx-3"> | </span>
+            <button class="font-bold">Indonesia</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col-reverse md:flex-row w-full justify-between items-center">
+        <p class="text-sm text-center mt-auto">
+          © Copyright <b>Resep</b>nesia 2021 all right reserved
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row mt-6 md:mt-0 items-center justify-center">
+          <span>Ikuti kami</span>
+          <span class="flex gap-4 mt-2 md:mt-0 md:ml-4">
+            <a href="#" class="link link-hover text-xl">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="link link-hover text-xl">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="link link-hover text-xl">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="./assets/scripts/script.js"></script>
-    <script type="text/javascript" src="./assets/scripts/paling-populer.js"></script>
-    <script type="text/javascript" src="./assets/scripts/mulai-memasak.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/scripts/paling-populer.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/scripts/mulai-memasak.js"></script>
   </body>
 </html>
