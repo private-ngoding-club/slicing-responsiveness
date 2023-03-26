@@ -403,12 +403,55 @@
     <!-- Lestarikan 1 -->
     <section>
       <div
-        class="container w-[85%] mx-auto pb-[4.1875rem] sm:pb-[4.6875rem] md:w-[87%] md:pb-[5.625rem] xl:w-[90%] xl:pb-44">
-        <h2
-          class="text-[2.625rem] text-center font-bold leading-[3.25rem] mb-6">
-          Lestarikan<br />kuliner<br /><span>nusantara</span>
-        </h2>
-        <div class="flex flex-nowrap gap-[1.875rem] overflow-hidden">
+        class="container w-[85%] mx-auto pb-[4.1875rem] sm:pb-[4.6875rem] md:w-[87%] md:pb-[5.625rem] xl:flex xl:gap-14 xl:w-[90%] xl:pb-44">
+        <div id="lestarikan__left" class="xl:w-[25%]">
+          <h2
+            class="text-[2.625rem] text-center font-bold leading-[3.25rem] mb-6 xl:text-[2.625rem] xl:text-left xl:mb-3">
+            Lestarikan<br class="xl:hidden" />
+            kuliner<br class="xl:hidden" />
+            <span class="xl:text-[#F95E5E]">nusantara</span>
+          </h2>
+          <p class="hidden text-base leading-5 mb-10 xl:block">
+            Menurut https://bisnis.com/ kita memiliki lebih dari
+            <b
+              >5.300 makanan asli dari Indonesia. Kita sebagai bangsa
+              Indonesia</b
+            >
+            wajib melestarikan agar kelak anak dan cucu kita memiliki budaya
+            Indonesia
+          </p>
+          <button class="section__button hidden xl:block xl:mx-0">
+            <span>Pelajari selengkapnya</span>
+            <i class="fa-solid fa-arrow-right section__button-arrow"></i>
+          </button>
+        </div>
+        <div id="lestarikan__right" class="w-full">
+          <div class="mb-5">
+            <img
+              class="xl:w-full xl:h-[17.25rem] object-cover object-center"
+              src="assets/images/lestarikan-1-wide.png"
+              alt="Makanan" />
+          </div>
+          <div class="flex gap-5">
+            <img
+              class="xl:w-full xl:h-[7.9375rem] object-cover object-center"
+              src="assets/images/lestarikan-2.png"
+              alt="Makanan" />
+            <img
+              class="xl:w-full xl:h-[7.9375rem] object-cover object-center"
+              src="assets/images/lestarikan-3.png"
+              alt="Makanan" />
+            <img
+              class="xl:w-full xl:h-[7.9375rem] object-cover object-center"
+              src="assets/images/lestarikan-4.png"
+              alt="Makanan" />
+            <img
+              class="xl:w-full xl:h-[7.9375rem] object-cover object-center"
+              src="assets/images/lestarikan-5.png"
+              alt="Makanan" />
+          </div>
+        </div>
+        <!--         <div class="flex flex-nowrap gap-[1.875rem] overflow-hidden">
           <div
             class="shrink-0 w-[14.5rem] h-[21.5rem] rounded shadow-md bg-[url('./assets/images/lestarikan/lestarikan-1-wide.png')] bg-cover bg-center bg-no-repeat"></div>
           <div
@@ -419,9 +462,9 @@
             class="shrink-0 w-[13rem] h-[21.5rem] rounded bg-[url('./assets/images/lestarikan/lestarikan-4.png')] bg-cover bg-center bg-no-repeat"></div>
           <div
             class="shrink-0 w-[13rem] h-[21.5rem] rounded bg-[url('./assets/images/lestarikan/lestarikan-5.png')] bg-cover bg-center bg-no-repeat"></div>
-        </div>
+        </div> -->
         <button
-          class="section__button w-10/12 mx-auto rounded-lg mt-[1.875rem]">
+          class="section__button w-10/12 mx-auto rounded-lg mt-[1.875rem] sm:w-fit xl:hidden">
           <span>Pelajari selengkapnya</span>
           <i class="fa-solid fa-arrow-right section__button-arrow"></i>
         </button>
