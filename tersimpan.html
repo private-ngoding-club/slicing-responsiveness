@@ -234,7 +234,31 @@
 
     <section>
       <div
-        class="container w-[85%] mx-auto pt-[3.4375rem] pb-20 xl:w-[90%] xl:pt-[5.25rem] xl:pb-64"></div>
+        class="container w-[85%] mx-auto pt-[3.4375rem] pb-20 xl:w-[90%] xl:pt-[5.25rem] xl:pb-64">
+        <div
+          class="flex flex-col gap-5 mt-5 mb-7 md:flex-row md:justify-between md:gap-0 md:mt-0 md:mb-8">
+          <h2 class="font-bold text-2xl h-fit xl:section__title xl:text-left">
+            <span class="xl:hidden">Tersimpan</span
+            ><span class="hidden xl:inline-block">Tersimpan</span>
+          </h2>
+          <!-- Search Input -->
+          <div
+            class="w-[99%] border border-[#DDDDDD] rounded relative md:max-w-[22.8125rem]">
+            <button
+              class="py-2.5 absolute left-[0.6875rem] top-1/2 -translate-y-1/2 md:left-[0.8125rem]">
+              <img
+                class="w-[1rem] aspect-square md:w-[1.125rem]"
+                src="assets/images/icons/search-2.svg"
+                loading="lazy"
+                alt="Search" />
+            </button>
+            <input
+              class="text-sm w-full px-[0.6875rem] py-2.5 pl-[2.375rem] bg-white placeholder:text-sm placeholder:text-[#CACACA] focus:outline-none focus:ring-2 focus:ring-slate-500 md:text-[0.9375rem] md:px-[2.625rem] md:py-3 md:placeholder:text-[0.9375rem]"
+              type="text"
+              placeholder="Cari sesuatu" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="footer py-10 md:py-16 px-16 md:px-20">
