@@ -1,64 +1,66 @@
 let savedMakananForStorage =
-	JSON.parse(localStorage.getItem("Makanan Tersimpan")) || [];
+  JSON.parse(localStorage.getItem("Makanan Tersimpan")) || [];
 
 const saveButton = document.querySelectorAll("#save-button");
 
 saveButton.forEach((button, index) => {
-	button.addEventListener("click", () => {
-		const makananItem = button.parentNode.parentNode;
-		const bookmarkIcon = button.querySelector("i");
+  button.addEventListener("click", () => {
+    const makananItem = button.parentNode.parentNode;
+    const makananItemId = makananItem.getAttribute("data-id");
+    const bookmarkIcon = button.querySelector("i");
 
-		if (makananItem.getAttribute("data-saved") == "false") {
-			makananItem.setAttribute("data-saved", true);
+    const isItemExist = savedMakananForStorage.find(
+      (item) => item.id == makananItemId
+    );
 
-			// Change bookmark icon when clicked.
-			bookmarkIcon.classList.remove("fa-regular", "gradient--red");
-			bookmarkIcon.classList.add("fa-solid", "text-[#F05454]");
+    const allCurrentMakananItem = document.querySelectorAll(
+      `[data-id="${makananItemId}"]`
+    );
 
-			// Add selected food to savedMakananForStorage array.
-			mulaiMemasak.forEach((makananObject, index) => {
-				if (makananObject.id == makananItem.dataset.id && makananObject) {
-					savedMakananForStorage.push(makananObject);
-				}
-			});
-			palingPopulerBig.forEach((makananObject, index) => {
-				if (makananObject.id == makananItem.dataset.id && makananObject) {
-					savedMakananForStorage.push(makananObject);
-				}
-			});
-			palingPopulerSmall.forEach((makananObject, index) => {
-				if (makananObject.id == makananItem.dataset.id && makananObject) {
-					savedMakananForStorage.push(makananObject);
-				}
-			});
-		} else {
-			makananItem.setAttribute("data-saved", false);
+    if (isItemExist === undefined) {
+      // Change bookmark icon when clicked.
+      allCurrentMakananItem.forEach((item) => {
+        item.querySelector("i").classList.remove("fa-regular", "gradient--red");
+        item.querySelector("i").classList.add("fa-solid", "text-[#F05454]");
+      });
 
-			// Change bookmark icon when clicked.
-			bookmarkIcon.classList.remove("fa-solid", "text-[#F05454]");
-			bookmarkIcon.classList.add("fa-regular", "gradient--red");
+      // Add selected food to savedMakananForStorage array.
+      dataMakanan.forEach((makananObject, index) => {
+        if (makananObject.id == makananItem.dataset.id && makananObject) {
+          savedMakananForStorage.push(makananObject);
+        }
+      });
+    } else {
+      // Change bookmark icon when clicked.
+      allCurrentMakananItem.forEach((item) => {
+        item.querySelector("i").classList.remove("fa-solid", "text-[#F05454]");
+        item.querySelector("i").classList.add("fa-regular", "gradient--red");
+      });
 
-			// Remove selected food from savedMakananForStorage array.
-			savedMakananForStorage.forEach((makananObject, index) => {
-				if (makananObject.id == makananItem.dataset.id) {
-					savedMakananForStorage.splice(index, 1);
-				}
-			});
-		}
+      // Remove selected food from savedMakananForStorage array.
+      savedMakananForStorage.forEach((makananObject, index) => {
+        if (makananObject.id == makananItem.dataset.id) {
+          savedMakananForStorage.splice(index, 1);
+        }
+      });
+    }
 
-		localStorage.setItem(
-			"Makanan Tersimpan",
-			JSON.stringify(savedMakananForStorage)
-		);
-	});
+    localStorage.setItem(
+      "Makanan Tersimpan",
+      JSON.stringify(savedMakananForStorage)
+    );
+  });
 });
 
 // Change bookmark icon when load if it is saved before.
 savedMakananForStorage.forEach((makanan, index) => {
-	const makananBookmarked = document.querySelector(`[data-id="${makanan.id}"]`);
-	makananBookmarked.setAttribute("data-saved", true);
+  const makananBookmarked = document.querySelectorAll(
+    `[data-id="${makanan.id}"]`
+  );
 
-	const bookmarkIcon = makananBookmarked.querySelector("i");
-	bookmarkIcon.classList.remove("fa-regular", "gradient--red");
-	bookmarkIcon.classList.add("fa-solid", "text-[#F05454]");
+  makananBookmarked.forEach((makanan) => {
+    const bookmarkIcon = makanan.querySelector("i");
+    bookmarkIcon.classList.remove("fa-regular", "gradient--red");
+    bookmarkIcon.classList.add("fa-solid", "text-[#F05454]");
+  });
 });

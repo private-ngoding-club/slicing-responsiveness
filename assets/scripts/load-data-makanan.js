@@ -1,7 +1,8 @@
 // Paling Populer.
-palingPopulerBig.forEach((makanan) => {
-	document.querySelector("#paling-populer__grid-column-1").innerHTML += `
-              <div id="paling-populer__grid-item--large" data-id="${makanan.id}" data-saved="false">
+dataMakanan.forEach((makanan) => {
+  if (makanan.section.includes("palingPopulerBig"))
+    document.querySelector("#paling-populer__grid-column-1").innerHTML += `
+              <div id="paling-populer__grid-item--large" data-id="${makanan.id}">
                 <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
                   <img class="w-full h-full object-cover object-center rounded-lg" src="${makanan.image}" alt="Makanan" loading="lazy" />
                   <button id="save-button" class="flex justify-center items-center w-[3.625rem] h-[3.375rem] rounded-bl-lg rounded-tr-lg bg-white absolute right-0 top-0 cursor-pointer">
@@ -44,9 +45,10 @@ palingPopulerBig.forEach((makanan) => {
               </div>`;
 });
 
-palingPopulerSmall.forEach((makanan) => {
-	document.querySelector("#paling-populer__grid-column-2").innerHTML += `
-              <div id="paling-populer__grid-item--small" data-id="${makanan.id}" data-saved="false">
+dataMakanan.forEach((makanan) => {
+  if (makanan.section.includes("palingPopulerSmall"))
+    document.querySelector("#paling-populer__grid-column-2").innerHTML += `
+              <div id="paling-populer__grid-item--small" data-id="${makanan.id}">
                 <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
                   <img class="w-full h-full object-cover object-center rounded" src="${makanan.image}" alt="Makanan" loading="lazy" />
                   <button id="save-button" class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
@@ -82,9 +84,10 @@ palingPopulerSmall.forEach((makanan) => {
 });
 
 // Mulai Memasak.
-mulaiMemasak.forEach((makanan) => {
-	document.querySelector("#mulai-memasak__grid").innerHTML += `
-	    <div id="mulai-memasak__grid-item" class="mb-5 xl:mb-[1.625rem]" data-id="${makanan.id}" data-saved="false">
+dataMakanan.forEach((makanan) => {
+  if (makanan.section.includes("mulaiMemasak"))
+    document.querySelector("#mulai-memasak__grid").innerHTML += `
+	    <div id="mulai-memasak__grid-item" class="mb-5 xl:mb-[1.625rem]" data-id="${makanan.id}">
 	      <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)] xl:h-[17.25rem] xl:mb-3">
 	        <img class="w-full h-full object-cover object-center rounded" src="${makanan.image}" alt="Makanan" loading="lazy" />
 	        <button id="save-button" class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer xl:w-[3.625rem] xl:h-[3.625rem]">
