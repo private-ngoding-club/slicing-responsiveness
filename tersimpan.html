@@ -106,14 +106,15 @@
           class="sidebar__button w-5 aspect-square bg-[url('assets/images/icons/burger-black.svg')] bg-no-repeat bg-contain bg-center md:w-6"
           data-sidebar-expanded="false"
           aria-label="Sidebar menu"
-          aria-controls="sidebar"></button>
+          aria-controls="sidebar"
+          aria-expanded="false"></button>
       </div>
 
       <!-- Sidebar / Header on desktop -->
       <div
         id="sidebar"
-        class="w-full max-w-xs bg-white fixed top-0 bottom-0 right-0 overflow-y-auto translate-x-full transition-[transform] duration-500 ease-in-out aria-[expanded=true]:translate-x-0 z-[9999] md:max-w-md xl:max-w-full xl:bg-transparent xl:static xl:translate-x-0"
-        aria-expanded="false">
+        class="w-full max-w-xs bg-white fixed top-0 bottom-0 right-0 overflow-y-auto translate-x-full transition-[transform] duration-500 ease-in-out data-[expanded=true]:translate-x-0 z-[9999] md:max-w-md xl:max-w-full xl:bg-transparent xl:static xl:translate-x-0"
+        data-expanded="false">
         <div
           class="container flex flex-col w-[85%] min-h-full mx-auto pt-[1.5625rem] md:w-[85%] md:pt-[1.8125rem] xl:flex-row xl:w-[90%] xl:py-[2.375rem]">
           <!-- -Title & Close Button- -->
@@ -131,7 +132,8 @@
             <button
               class="sidebar__button self-start w-5 aspect-square bg-[url('assets/images/icons/x.svg')] bg-no-repeat bg-contain bg-center md:w-6 xl:hidden"
               aria-label="Sidebar menu"
-              aria-controls="sidebar"></button>
+              aria-controls="sidebar"
+              aria-expanded="false"></button>
           </div>
           <!-- -Search Input- -->
           <div

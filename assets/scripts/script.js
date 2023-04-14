@@ -1,14 +1,16 @@
 const sidebar = document.querySelector("#sidebar");
-const sidebarButton = document.querySelectorAll(".sidebar__button");
+const sidebarButtons = document.querySelectorAll(".sidebar__button");
 
-sidebarButton.forEach((button) => {
+sidebarButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    let opened = sidebar.getAttribute("aria-expanded");
+    let opened = sidebar.getAttribute("data-expanded");
 
     if (opened == "false") {
-      sidebar.setAttribute("aria-expanded", true);
+      sidebar.setAttribute("data-expanded", true);
+      sidebarButtons.forEach((btn) => btn.setAttribute("aria-expanded", true));
     } else {
-      sidebar.setAttribute("aria-expanded", false);
+      sidebar.setAttribute("data-expanded", false);
+      sidebarButtons.forEach((btn) => btn.setAttribute("aria-expanded", false));
     }
   });
 });
