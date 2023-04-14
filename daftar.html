@@ -190,7 +190,8 @@
           Daftar
         </h2>
         <form action="" method="post">
-          <div class="relative">
+          <!-- Nama Lengkap -->
+          <div class="relative mb-3">
             <label
               for="nama"
               class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
@@ -203,6 +204,54 @@
               type="text"
               name="nama"
               placeholder="Nama Lengkap" />
+          </div>
+
+          <!-- Email -->
+          <div class="relative mb-3">
+            <label
+              for="email"
+              class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
+              <i
+                class="fa-solid fa-envelope text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+            </label>
+            <input
+              class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email" />
+          </div>
+
+          <!-- Password -->
+          <div class="relative mb-3">
+            <label
+              for="password"
+              class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
+              <i
+                class="fa-solid fa-lock text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+            </label>
+            <input
+              class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password" />
+          </div>
+
+          <!-- Ulangi Password -->
+          <div class="relative mb-3">
+            <label
+              for="ulangi-password"
+              class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
+              <i
+                class="fa-solid fa-lock text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+            </label>
+            <input
+              class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
+              id="ulangi-password"
+              type="password"
+              name="ulangi-password"
+              placeholder="Ulangi password" />
           </div>
         </form>
       </div>
