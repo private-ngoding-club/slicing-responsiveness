@@ -50,7 +50,7 @@
       src="https://kit.fontawesome.com/1d7359658f.js"
       crossorigin="anonymous"></script>
   </head>
-  <body class="text-[#454545] font-quicksand">
+  <body class="text-[#454545] font-quicksand min-h-screen flex flex-col">
     <!-- Header -->
     <header>
       <div
@@ -194,139 +194,148 @@
     <!-- ------ -->
 
     <section>
-      <div class="container w-[85%] mx-auto pt-9 xl:w-[90%] xl:pt-[3.75rem]">
-        <h2
-          class="gradient--red text-2xl text-center font-bold mb-3.5 xl:text-[2.625rem] xl:mb-[2.125rem]">
-          Daftar
-        </h2>
+      <div
+        class="container w-[85%] mx-auto pt-9 pb-1 xl:flex xl:justify-between xl:w-[90%] xl:pt-[3.75rem] xl:pb-36">
+        <div>
+          <h2
+            class="gradient--red text-2xl text-center font-bold mb-3.5 xl:text-[2.625rem] xl:mb-[2.125rem]">
+            Daftar
+          </h2>
 
-        <!-- Form -->
-        <form action="" method="post">
-          <!-- Nama Lengkap -->
-          <div class="relative mb-3">
-            <label
-              for="nama"
-              class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
-              <i
-                class="fa-solid fa-user text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
-            </label>
-            <input
-              class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
-              id="nama"
-              type="text"
-              name="nama"
-              placeholder="Nama Lengkap"
-              minlength="3"
-              required />
-          </div>
-
-          <!-- Email -->
-          <div class="relative mb-3">
-            <label
-              for="email"
-              class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
-              <i
-                class="fa-solid fa-envelope text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
-            </label>
-            <input
-              class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email"
-              required />
-          </div>
-
-          <div class="xl:flex xl:gap-5">
-            <!-- Password -->
-            <div class="mb-3 relative xl:w-1/2">
+          <!-- Form -->
+          <form action="" method="post">
+            <!-- Nama Lengkap -->
+            <div class="relative mb-3">
               <label
-                for="password"
+                for="nama"
                 class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
                 <i
-                  class="fa-solid fa-lock text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+                  class="fa-solid fa-user text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
               </label>
               <input
                 class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
-                id="password"
-                type="password"
-                name="password"
-                placeholder="Password"
-                minlength="8"
+                id="nama"
+                type="text"
+                name="nama"
+                placeholder="Nama Lengkap"
+                minlength="3"
                 required />
             </div>
 
-            <!-- Ulangi Password -->
-            <div class="mb-3 relative xl:w-1/2">
+            <!-- Email -->
+            <div class="relative mb-3">
               <label
-                for="ulangi-password"
+                for="email"
                 class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
                 <i
-                  class="fa-solid fa-lock text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+                  class="fa-solid fa-envelope text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
               </label>
               <input
                 class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
-                id="ulangi-password"
-                type="password"
-                name="ulangi-password"
-                placeholder="Ulangi password"
-                minlength="8"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
                 required />
             </div>
-          </div>
 
-          <!-- Button -->
-          <button class="form__button mt-6 xl:mt-8">
-            <span>Daftar</span>
-            <i class="fa-solid fa-user-plus form__button-icon"></i>
-          </button>
-        </form>
+            <div class="xl:flex xl:gap-5">
+              <!-- Password -->
+              <div class="mb-3 relative xl:w-1/2">
+                <label
+                  for="password"
+                  class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
+                  <i
+                    class="fa-solid fa-lock text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+                </label>
+                <input
+                  class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  minlength="8"
+                  required />
+              </div>
 
-        <!-- Atau Masuk Menggunakan -->
-        <div class="text-sm text-center mt-[1.125rem] xl:text-base">
-          <div>Atau masuk menggunakan</div>
-          <div
-            class="flex gap-[0.9375rem] w-fit mx-auto mt-4 mb-[1.125rem] xl:mb-10">
-            <a
-              href="#"
-              class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
-              <img
-                class="w-5 aspect-square"
-                src="./assets/images/daftar-dan-masuk/google.svg"
-                alt="Google icon" />
-            </a>
-            <a
-              href="#"
-              class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
-              <img
-                class="w-5 aspect-square"
-                src="./assets/images/daftar-dan-masuk/facebook.svg"
-                alt="Facebook icon" />
-            </a>
-            <a
-              href="#"
-              class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
-              <img
-                class="w-5 aspect-square"
-                src="./assets/images/daftar-dan-masuk/apple.svg"
-                alt="Apple icon" />
-            </a>
-            <a
-              href="#"
-              class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
-              <img
-                class="w-5 aspect-square"
-                src="./assets/images/daftar-dan-masuk/twitter.svg"
-                alt="Twitter icon" />
-            </a>
-          </div>
-          <div>
-            Sudah punya akun ?
-            <a href="./masuk.html" class="gradient--red">Masuk</a>
+              <!-- Ulangi Password -->
+              <div class="mb-3 relative xl:w-1/2">
+                <label
+                  for="ulangi-password"
+                  class="absolute left-[1.125rem] top-1/2 -translate-y-1/2">
+                  <i
+                    class="fa-solid fa-lock text-base text-[#A3A3A3] xl:text-[1.125rem]"></i>
+                </label>
+                <input
+                  class="bg-white text-[#454545] text-sm w-full px-[1.125rem] py-3.5 pl-12 border border-[#A3A3A3] rounded placeholder:text-[#A3A3A3] placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 xl:text-base xl:pl-[3.125rem] xl:rounded-lg"
+                  id="ulangi-password"
+                  type="password"
+                  name="ulangi-password"
+                  placeholder="Ulangi password"
+                  minlength="8"
+                  required />
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button class="form__button mt-6 xl:mt-8">
+              <span>Daftar</span>
+              <i class="fa-solid fa-user-plus form__button-icon"></i>
+            </button>
+          </form>
+
+          <!-- Atau Masuk Menggunakan -->
+          <div class="text-sm text-center mt-[1.125rem] xl:text-base">
+            <div>Atau masuk menggunakan</div>
+            <div
+              class="flex gap-[0.9375rem] w-fit mx-auto mt-4 mb-[1.125rem] xl:mb-10">
+              <a
+                href="#"
+                class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
+                <img
+                  class="w-5 aspect-square"
+                  src="./assets/images/daftar-dan-masuk/google.svg"
+                  alt="Google icon" />
+              </a>
+              <a
+                href="#"
+                class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
+                <img
+                  class="w-5 aspect-square"
+                  src="./assets/images/daftar-dan-masuk/facebook.svg"
+                  alt="Facebook icon" />
+              </a>
+              <a
+                href="#"
+                class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
+                <img
+                  class="w-5 aspect-square"
+                  src="./assets/images/daftar-dan-masuk/apple.svg"
+                  alt="Apple icon" />
+              </a>
+              <a
+                href="#"
+                class="px-5 py-4 border border-[#A3A3A3] rounded-lg cursor-pointer xl:px-10 xl:py-[1.125rem]">
+                <img
+                  class="w-5 aspect-square"
+                  src="./assets/images/daftar-dan-masuk/twitter.svg"
+                  alt="Twitter icon" />
+              </a>
+            </div>
+            <div>
+              Sudah punya akun ?
+              <a href="./masuk.html" class="gradient--red">Masuk</a>
+            </div>
           </div>
         </div>
+        <div class="hidden xl:block">asd</div>
       </div>
     </section>
+
+    <!-- Mobile Background Bottom / Note: Pake flex di <body> dan mt-auto biar tetap dibawah. -->
+    <div
+      class="mt-auto w-full h-[4.5rem] relative before:absolute before:bg-[url('assets/images/daftar-dan-masuk/background-gradient.png')] before:bg-no-repeat before:bg-[left_33%_top] before:w-full before:h-full before:z-[-999] md:before:bg-[length:140%_auto] xl:hidden"></div>
+    <!-- --------------- -->
 
     <script type="text/javascript" src="./assets/scripts/script.js"></script>
   </body>
