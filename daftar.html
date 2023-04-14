@@ -50,7 +50,8 @@
       src="https://kit.fontawesome.com/1d7359658f.js"
       crossorigin="anonymous"></script>
   </head>
-  <body class="text-[#454545] font-quicksand min-h-screen flex flex-col">
+  <body
+    class="text-[#454545] font-quicksand min-h-screen flex flex-col relative">
     <!-- Header -->
     <header>
       <div
@@ -140,7 +141,7 @@
             <hr class="my-7 md:my-8 border-t border-[#DDDDDD] xl:hidden" />
 
             <ul
-              class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
+              class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/login.svg" />
                 <a href="./daftar.html">Daftar</a>
@@ -154,7 +155,7 @@
             <ul class="hidden xl:flex xl:items-center xl:gap-[1.5625rem]">
               <li>
                 <button
-                  class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search-black.svg')] bg-no-repeat bg-center"></button>
+                  class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
               </li>
               <li>
                 <a
@@ -162,7 +163,7 @@
                   href="./tersimpan.html
                 "
                   ><button
-                    class="w-full h-full bg-[url('assets/images/icons/wishlist-black.svg')] bg-no-repeat bg-center"></button
+                    class="w-full h-full bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button
                 ></a>
               </li>
             </ul>
@@ -328,13 +329,28 @@
             </div>
           </div>
         </div>
-        <div class="hidden xl:block">asd</div>
+        <div class="hidden relative xl:flex xl:flex-col xl:justify-center">
+          <h2
+            class="text-[2.625rem] text-white leading-[3.25rem] text-right -mt-12">
+            Simpan resep<br />kuliner yang kamu<br />suka dan lestarikan<br />kuliner
+            indonesia<br />dari berbagai<br />daerah!
+          </h2>
+          <img
+            class="absolute -bottom-16 right-0"
+            src="./assets/images/daftar-dan-masuk/HUT-RI-76.png"
+            alt="HUT-RI 76" />
+        </div>
       </div>
     </section>
 
     <!-- Mobile Background Bottom / Note: Pake flex di <body> dan mt-auto biar tetap dibawah. -->
     <div
       class="mt-auto w-full h-[4.5rem] relative before:absolute before:bg-[url('assets/images/daftar-dan-masuk/background-gradient.png')] before:bg-no-repeat before:bg-[left_33%_top] before:w-full before:h-full before:z-[-999] md:before:bg-[length:140%_auto] xl:hidden"></div>
+    <!-- --------------- -->
+
+    <!-- Desktop Background -->
+    <div
+      class="hidden w-full h-full absolute top-0 right-0 bg-[url('assets/images/daftar-dan-masuk/background-gradient.png')] bg-no-repeat bg-[right_-22rem_top_-4rem] z-[-999] xl:block"></div>
     <!-- --------------- -->
 
     <script type="text/javascript" src="./assets/scripts/script.js"></script>
