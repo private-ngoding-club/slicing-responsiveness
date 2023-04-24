@@ -36,18 +36,6 @@
           @apply text-[0.8125rem] md:text-sm xl:text-base;
         }
 
-        .button__paling-populer {
-          @apply px-2.5 py-0.5 rounded-sm bg-white md:px-3 md:py-1 xl:bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E];
-        }
-
-        .button__paling-populer--gradient {
-          @apply gradient--red xl:text-white;
-        }
-
-        .daerah__grid-item {
-          @apply block aspect-[146/97] rounded relative bg-no-repeat bg-cover bg-center cursor-pointer before:bg-[#454545]/[0.5] before:w-full before:h-full before:rounded before:absolute after:text-white after:text-sm after:font-bold after:absolute after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 sm:after:text-base lg:aspect-[270/180] lg:rounded-md lg:before:rounded-md lg:after:text-lg xl:aspect-[290/200] xl:rounded-lg xl:before:rounded-lg xl:after:text-2xl;
-        }
-
         .footer {
           background: linear-gradient(
               159.87deg,
@@ -106,14 +94,17 @@
     <!-- Header -->
     <header>
       <div
-        class="container flex justify-between text-white w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
+        class="container flex justify-between w-[85%] mx-auto py-4 md:w-[87%] md:py-5 xl:hidden">
         <div class="text-sm md:text-lg">
-          <a class="cursor-pointer" href="./index.html"
-            ><span class="font-bold">Resep</span>nesia</a
-          >
+          <a class="cursor-pointer" href="./index.html">
+            <span
+              class="text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#F95E5E] to-[#AF2E2E]/[.7]">
+              Resep</span
+            >nesia
+          </a>
         </div>
         <button
-          class="sidebar__button w-5 aspect-square bg-[url('assets/images/icons/burger.svg')] bg-no-repeat bg-contain bg-center md:w-6"
+          class="sidebar__button w-5 aspect-square bg-[url('assets/images/icons/burger-black.svg')] bg-no-repeat bg-contain bg-center md:w-6"
           data-sidebar-expanded="false"
           aria-label="Sidebar menu"
           aria-controls="sidebar"
@@ -193,7 +184,7 @@
             <hr class="my-7 md:my-8 border-t border-[#DDDDDD] xl:hidden" />
 
             <ul
-              class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:text-white xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
+              class="flex flex-col gap-7 md:gap-8 xl:flex-row xl:gap-[3.125rem] xl:mr-[3.125rem] xl:ml-auto xl:[&_img]:hidden">
               <li>
                 <img src="assets/images/icons/login.svg" alt="Daftar icon" />
                 <a href="./daftar.html">Daftar</a>
@@ -207,7 +198,7 @@
             <ul class="hidden xl:flex xl:items-center xl:gap-[1.5625rem]">
               <li>
                 <button
-                  class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search.svg')] bg-no-repeat bg-center"></button>
+                  class="w-[1.25rem] h-[1.25rem] bg-[url('assets/images/icons/search-black.svg')] bg-no-repeat bg-center"></button>
               </li>
               <li>
                 <a
@@ -215,7 +206,7 @@
                   href="./tersimpan.html
                   "
                   ><button
-                    class="w-full h-full bg-[url('assets/images/icons/wishlist.svg')] bg-no-repeat bg-center"></button
+                    class="w-full h-full bg-[url('assets/images/icons/wishlist-black.svg')] bg-no-repeat bg-center"></button
                 ></a>
               </li>
             </ul>
@@ -254,7 +245,20 @@
       <!-- ------- -->
     </header>
 
-    <main>BLOG PAGE</main>
+    <main>
+      <section>
+        <div
+          class="container w-[85%] mx-auto pb-[3.125rem] md:w-[87%] md:pb-[3.3125rem] xl:w-[90%] xl:pb-14">
+          <h2
+            class="xl:text-center font-bold mb-7 text-[2.625rem] xl:section__title xl:mb-[4.375rem] text-left">
+            <span>Tahu kah kamu ?</span>
+          </h2>
+          <div
+            id="tahu-kah__grid"
+            class="grid gap-y-5 overflow-hidden sm:grid-rows-1 sm:grid-cols-2 sm:gap-y-0 sm:gap-x-5 lg:grid-cols-3 xl:gap-x-14"></div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer py-10 md:py-16 px-16 md:px-20">
       <div
@@ -350,5 +354,6 @@
     </footer>
 
     <script type="text/javascript" src="./assets/scripts/sidebar.js"></script>
+    <script type="text/javascript" src="./assets/scripts/tahu-kah.js"></script>
   </body>
 </html>

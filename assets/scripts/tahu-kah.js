@@ -1,3 +1,7 @@
+const currentLocation = location.pathname;
+const homeUrl = ["/", "/index.html"];
+const limit = homeUrl.includes(currentLocation) ? 2 : 9;
+
 const tahuKahItems = [
   {
     title: "5 Oleh-oleh khas Banten",
@@ -17,10 +21,47 @@ const tahuKahItems = [
       "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
     image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
   },
+  {
+    title: "Mengapa nasi padang terkenal",
+    deskripsi:
+      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
+    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+  },
+  {
+    title: "Mengapa nasi padang terkenal",
+    deskripsi:
+      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
+    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+  },
+  {
+    title: "Mengapa nasi padang terkenal",
+    deskripsi:
+      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
+    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+  },
+  {
+    title: "Mengapa nasi padang terkenal",
+    deskripsi:
+      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
+    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+  },
+  {
+    title: "Mengapa nasi padang terkenal",
+    deskripsi:
+      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
+    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+  },
+  {
+    title: "Mengapa nasi padang terkenal",
+    deskripsi:
+      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
+    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+  },
 ];
 
-tahuKahItems.forEach((item) => {
-  document.querySelector("#tahu-kah__grid").innerHTML += `
+tahuKahItems.forEach((item, index) => {
+  if (index <= limit) {
+    document.querySelector("#tahu-kah__grid").innerHTML += `
           <div>
             <div class="mb-5 relative">
               <img
@@ -35,4 +76,5 @@ tahuKahItems.forEach((item) => {
               ${item.deskripsi}
             </p>
           </div>`;
+  }
 });
