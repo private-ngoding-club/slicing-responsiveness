@@ -22,40 +22,40 @@ const tahuKahItems = [
     image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
   },
   {
-    title: "Mengapa nasi padang terkenal",
+    title: "Mengapa kita harus melestarikan budaya ?",
     deskripsi:
-      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
-    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+      "“budaya daerah merupakan aset berharga bagi kehidupan berbangsa ...",
+    image: "./assets/images/tahu-kah/blog-4.png",
   },
   {
-    title: "Mengapa nasi padang terkenal",
+    title: "Yuk coba kunjungi 5 wisata di Kalimantan",
     deskripsi:
-      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
-    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+      "“5 Destinasi Wisata Terbaik di Kalimantan, Surganya Pecinta Alam ...",
+    image: "./assets/images/tahu-kah/blog-5.png",
   },
   {
-    title: "Mengapa nasi padang terkenal",
+    title: "Sejarah masakan khas Indonesia",
     deskripsi:
-      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
-    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+      "“Indonesia awalnya dikenal sebagai negeri penghasil rempah yang ...",
+    image: "./assets/images/tahu-kah/blog-6.png",
   },
   {
-    title: "Mengapa nasi padang terkenal",
+    title: "Keunikan sejarah dibalik jajan seblak",
     deskripsi:
-      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
-    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+      "“Seblak merupakan penganan khas Bandung yang sebenarnya mirip dengan ...",
+    image: "./assets/images/tahu-kah/blog-7.png",
   },
   {
-    title: "Mengapa nasi padang terkenal",
+    title: "5 Tempat Oleh-oleh Khas Yogyakarta",
     deskripsi:
-      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
-    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+      "“1. Mamahke Jogja · 2. Bakpia · 3. Yangko · 4. Geplak · 5. Gudeg Kering ...",
+    image: "./assets/images/tahu-kah/blog-8.png",
   },
   {
-    title: "Mengapa nasi padang terkenal",
+    title: "Kalau bermain ke aceh, jangan lupa kunjungi 5 tempat ini",
     deskripsi:
-      "“Nasi padang murah dan mengenyangkan,” kata Cindita. di Restoran Sederhana ...",
-    image: "./assets/images/tahu-kah/mengapa-nasi-padang.png",
+      "“Di sini ada banyak tempat wisata menarik yang wajib Anda kunjungi, ...",
+    image: "./assets/images/tahu-kah/blog-9.png",
   },
 ];
 
