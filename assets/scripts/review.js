@@ -33,20 +33,20 @@ const review = [
 
 review.forEach((rev, index) => {
 	document.querySelector("#kata-mereka__grid").innerHTML += `
-          <div class="xl:flex xl:gap-[1.125rem] xl:items-center">
+          <div class="lg:flex lg:gap-[1.125rem] lg:items-center">
             <img
-              class="max-w-[4.5rem] mb-[0.4375rem] xl:max-w-[7.375rem] xl:mb-0"
+              class="max-w-[4.5rem] mb-[0.4375rem] md:max-w-[7.375rem] md:mb-0"
               src="${rev.profile}"
               alt="Profile picture." />
             <div>
-              <h3 class="text-sm font-bold xl:text-2xl xl:mb-2.5">
+              <h3 class="text-sm font-bold md:text-2xl md:mb-2.5">
                ${rev.nama}
               </h3>
               <p
-                class="text-[#A3A3A3] text-[0.625rem] mb-1 xl:text-base xl:mb-2.5">
+                class="text-[#A3A3A3] text-[0.625rem] mb-1 md:text-base md:mb-2.5">
                 ${rev.comment}
               </p>
-              <div class="text-[#FFA800] text-sm mr-px xl:text-xl">
+              <div class="text-[#FFA800] text-sm mr-px md:text-xl">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
