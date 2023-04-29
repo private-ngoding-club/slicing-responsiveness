@@ -5,7 +5,7 @@ dataMakanan.forEach((makanan) => {
               <div id="paling-populer__grid-item--large" data-id="${makanan.id}">
                 <div class="h-[13.75rem] mb-1.5 relative shadow-[0_2px_12px_-5px_rgba(0,0,0,0.25)]">
                   <img class="w-full h-full object-cover object-center rounded-lg" src="${makanan.image}" alt="Makanan" loading="lazy" />
-                  <button id="save-button" class="flex justify-center items-center w-[3.625rem] h-[3.375rem] rounded-bl-lg rounded-tr-lg bg-white absolute right-0 top-0 cursor-pointer">
+                  <button id="save-button" class="flex justify-center items-center w-[3.625rem] h-[3.375rem] rounded-bl-lg rounded-tr-lg bg-white absolute right-0 top-0 cursor-pointer" aria-label="Simpan resep">
                     <i class="fa-regular fa-bookmark text-[1.375rem] gradient--red"></i>
                   </button>
                   <div class="flex gap-[0.1875rem] absolute left-1/2 bottom-3 -translate-x-1/2">
@@ -51,7 +51,7 @@ dataMakanan.forEach((makanan) => {
               <div id="paling-populer__grid-item--small" data-id="${makanan.id}">
                 <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)]">
                   <img class="w-full h-full object-cover object-center rounded" src="${makanan.image}" alt="Makanan" loading="lazy" />
-                  <button id="save-button" class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer">
+                  <button id="save-button" class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer" aria-label="Simpan resep">
                     <i class="fa-regular fa-bookmark text-xs gradient--red"></i>
                   </button>
                 </div>
@@ -90,7 +90,7 @@ dataMakanan.forEach((makanan) => {
 	    <div id="mulai-memasak__grid-item" class="mb-5 xl:mb-[1.625rem]" data-id="${makanan.id}">
 	      <div class="h-[9.125rem] mb-[0.3125rem] relative shadow-[0_6px_12px_-5px_rgba(0,0,0,0.25)] xl:h-[17.25rem] xl:mb-3">
 	        <img class="w-full h-full object-cover object-center rounded" src="${makanan.image}" alt="Makanan" loading="lazy" />
-	        <button id="save-button" class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer xl:w-[3.625rem] xl:h-[3.625rem]">
+	        <button id="save-button" class="flex justify-center items-center w-8 h-8 rounded-bl rounded-tr bg-white absolute right-0 top-0 cursor-pointer xl:w-[3.625rem] xl:h-[3.625rem]" aria-label="Simpan resep">
 	          <i class="fa-regular fa-bookmark text-xs gradient--red xl:text-xl"></i>
 	        </button>
 	      </div>
